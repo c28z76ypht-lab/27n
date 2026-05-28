@@ -34,7 +34,7 @@
         <a href="#solucao">How we help</a>
         <a href="#processo">Process</a>
         <a href="#planos">Plans</a>
-        <a href="#sobre">About</a>
+        <a href="#marcar">Book</a>
       </nav>
       <div class="lang nav__lang" role="group" aria-label="Language">
         <a href="index.html" class="is-active" aria-current="true" hreflang="en">EN</a>
@@ -49,7 +49,7 @@
       <a href="#solucao">How we help</a>
       <a href="#processo">Process</a>
       <a href="#planos">Plans</a>
-      <a href="#sobre">About</a>
+      <a href="#marcar">Book</a>
       <a href="#contacto" class="btn btn--white">Start a project</a>
       <div class="lang lang--menu" role="group" aria-label="Language">
         <a href="index.html" class="is-active" aria-current="true">EN</a>
@@ -319,6 +319,20 @@
       </div>
     </section>
 
+    <!-- ============ BOOK A MEETING (Cal.com) ============ -->
+    <section class="section section--alt" id="marcar">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__kicker">Book a meeting</p>
+          <h2 class="section__title">Let's talk about your project.</h2>
+          <p class="section__intro">Pick a time that works for you — a free call to explore how we can help.</p>
+        </header>
+        <div class="cal-embed reveal">
+          <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-meeting"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ CTA / CONTACT ============ -->
     <section class="cta" id="contacto">
       <div class="cta__beams" aria-hidden="true"><span class="beam beam--1"></span><span class="beam beam--2"></span><span class="beam beam--3"></span></div>
@@ -365,6 +379,7 @@
         <a href="#solucao">How we help</a>
         <a href="#processo">Process</a>
         <a href="#planos">Plans</a>
+        <a href="#marcar">Book a meeting</a>
         <a href="#sobre">About</a>
         <a href="#contacto">Contact</a>
       </nav>
@@ -373,5 +388,17 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Cal.com inline embed -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "meeting", {origin:"https://27n.cal.com"});
+    Cal.ns.meeting("inline", {
+      elementOrSelector:"#my-cal-inline-meeting",
+      config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+      calLink: "afonso/meeting",
+    });
+    Cal.ns.meeting("ui", {"hideEventTypeDetails":false,"layout":"month_view","theme":"light"});
+  </script>
 </body>
 </html>

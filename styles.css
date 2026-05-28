@@ -239,6 +239,14 @@ a { color: inherit; text-decoration: none; }
 .plan--featured li::before { color: #7dffb0; }
 .plan .btn { margin-top: auto; }
 
+/* ---------- Cal.com embed ---------- */
+.cal-embed {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-xl);
+  box-shadow: 0 24px 60px -32px rgba(20,83,230,0.4); padding: 8px; overflow: hidden;
+  min-height: 640px;
+}
+.cal-embed #my-cal-inline-meeting { min-height: 624px; border-radius: calc(var(--radius-xl) - 8px); }
+
 /* ---------- CTA ---------- */
 .cta { position: relative; overflow: hidden; color: #fff; padding: clamp(70px, 10vw, 120px) 0;
   background: linear-gradient(135deg, var(--hero-from), var(--blue) 55%, var(--hero-to)); }
