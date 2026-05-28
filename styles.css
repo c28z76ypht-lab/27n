@@ -221,7 +221,10 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Pricing ---------- */
 .pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
-.plan { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-xl); padding: 34px 30px; position: relative; display: flex; flex-direction: column; gap: 8px; }
+.pricing--4 { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.plan { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-xl); padding: 34px 28px; position: relative; display: flex; flex-direction: column; gap: 8px; }
+.pricing--4 .plan { padding: 30px 24px; }
+.pricing--4 .plan__price { font-size: 1.7rem; }
 .plan--featured { background: linear-gradient(160deg, var(--blue-700), var(--blue)); color: #fff; border-color: transparent; box-shadow: 0 30px 60px -28px rgba(20,83,230,0.6); transform: translateY(-8px); }
 .plan__badge { position: absolute; top: 18px; right: 18px; font-family: var(--font-display); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(255,255,255,0.2); padding: 5px 11px; border-radius: 999px; }
 .plan h3 { font-size: 1.3rem; }
@@ -279,12 +282,13 @@ a { color: inherit; text-decoration: none; }
   .mobile-menu[hidden] { display: none; }
   .hero__inner { grid-template-columns: 1fr; gap: 40px; }
   .cards--3, .steps, .quotes, .pricing { grid-template-columns: 1fr; }
+  .pricing--4 { grid-template-columns: repeat(2, 1fr); }
   .audience { grid-template-columns: repeat(2, 1fr); }
   .plan--featured { transform: none; }
 }
 @media (max-width: 600px) {
   .hero__card-stats { grid-template-columns: 1fr 1fr; }
-  .benefits, .audience { grid-template-columns: 1fr; }
+  .benefits, .audience, .pricing--4 { grid-template-columns: 1fr; }
   .statband__grid { grid-template-columns: repeat(2, 1fr); gap: 34px 16px; }
   .cta__form { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
