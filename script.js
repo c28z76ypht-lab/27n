@@ -107,7 +107,10 @@
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var nome = document.getElementById("nome").value.trim();
-      status.textContent = "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h.";
+      var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
+      status.textContent = isEN
+        ? "Thanks, " + (nome || "") + "! We got your request and will reply within 24h."
+        : "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h.";
       form.reset();
     });
   }
