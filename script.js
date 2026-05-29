@@ -194,8 +194,7 @@
   (function () {
     var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
     var t = {
-      trigger: isEN ? "Contact us" : "Contacta-nos",
-      bubble: isEN ? "Message us 👋" : "Fala connosco 👋",
+      trigger: isEN ? "Chat on WhatsApp" : "Fala por WhatsApp",
       title: isEN ? "Chat on WhatsApp" : "Fala por WhatsApp",
       close: isEN ? "Close" : "Fechar"
     };
@@ -224,7 +223,6 @@
         '<button type="button" class="fab-close">' + t.close + ' ✕</button>' +
       '</div>' +
       '<div class="fab-launch">' +
-        '<span class="fab-bubble">' + t.bubble + '</span>' +
         '<button type="button" class="fab-trigger" aria-expanded="false" aria-controls="fab-panel" aria-label="' + t.trigger + '">' +
           '<span>' + t.trigger + '</span> 💬<span class="fab-badge">1</span></button>' +
       '</div>';
