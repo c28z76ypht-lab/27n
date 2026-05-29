@@ -216,7 +216,7 @@
     el.className = "fab-contact";
     el.innerHTML =
       '<div class="fab-panel" id="fab-panel" role="menu" aria-label="' + t.title + '">' +
-        '<p class="fab-panel-title">' + t.title + '</p>' + people +
+        people +
         '<button type="button" class="fab-close">' + t.close + ' ✕</button>' +
       '</div>' +
       '<div class="fab-launch">' +
