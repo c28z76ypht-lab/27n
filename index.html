@@ -32,6 +32,7 @@
       </a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#solucao">How we help</a>
+        <a href="#trabalho">Work</a>
         <a href="#processo">Process</a>
         <a href="#planos">Plans</a>
         <a href="#marcar">Book</a>
@@ -47,6 +48,7 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#solucao">How we help</a>
+      <a href="#trabalho">Work</a>
       <a href="#processo">Process</a>
       <a href="#planos">Plans</a>
       <a href="#marcar">Book</a>
@@ -227,6 +229,18 @@
       </div>
     </section>
 
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section section--alt" id="trabalho">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Selected work</p>
+          <h2 class="section__title">A few of the stores we've built.</h2>
+          <p class="section__intro">A sample of the 174 Shopify stores we've launched since 2020.</p>
+        </header>
+        <div class="work-grid" id="work-grid"></div>
+      </div>
+    </section>
+
     <!-- ============ TESTIMONIALS ============ -->
     <section class="section" id="sobre">
       <div class="container">
@@ -340,7 +354,11 @@
         <h2>Got a Shopify project in mind?</h2>
         <p>Tell us what you need. We reply within 24&nbsp;hours with the next steps.</p>
 
-        <form class="cta__form" id="contact-form" novalidate>
+        <form class="cta__form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="ccd3643b-788f-4d38-b5c9-d80562473732" />
+          <input type="hidden" name="subject" value="New project request — 27n.pt (EN)" />
+          <input type="hidden" name="from_name" value="27n.pt website" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field">
             <label for="nome">Name</label>
             <input type="text" id="nome" name="nome" autocomplete="name" required />
@@ -377,6 +395,7 @@
       </div>
       <nav class="footer__nav" aria-label="Footer">
         <a href="#solucao">How we help</a>
+        <a href="#trabalho">Work</a>
         <a href="#processo">Process</a>
         <a href="#planos">Plans</a>
         <a href="#marcar">Book a meeting</a>

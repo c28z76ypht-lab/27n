@@ -103,17 +103,92 @@
   var form = document.getElementById("contact-form");
   var status = document.getElementById("form-status");
   if (form) {
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
+    var t = {
+      sending: isEN ? "Sending…" : "A enviar…",
+      ok: function (nome) {
+        return isEN
+          ? "Thanks, " + (nome || "") + "! We got your request and will reply within 24h."
+          : "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h.";
+      },
+      err: isEN
+        ? "Something went wrong. Please try again or email ola@27n.pt."
+        : "Algo correu mal. Tenta novamente ou escreve para ola@27n.pt."
+    };
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var nome = document.getElementById("nome").value.trim();
-      var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
-      status.textContent = isEN
-        ? "Thanks, " + (nome || "") + "! We got your request and will reply within 24h."
-        : "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h.";
-      form.reset();
+
+      status.textContent = t.sending;
+      status.classList.remove("form__status--error");
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            status.textContent = t.ok(nome);
+            status.classList.remove("form__status--error");
+            form.reset();
+          } else {
+            status.textContent = t.err;
+            status.classList.add("form__status--error");
+          }
+        })
+        .catch(function () {
+          status.textContent = t.err;
+          status.classList.add("form__status--error");
+        })
+        .then(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
+
+  /* ---- Portfólio: grelha de lojas (screenshots) ---- */
+  (function () {
+    var grid = document.getElementById("work-grid");
+    if (!grid) return;
+    var inPt = /\/pt(\/|$)/.test(location.pathname);
+    var base = inPt ? "../" : "";
+    var urls = [
+      "https://adamryansuits.com/","https://bosssupplements.com/","https://caramels.com/",
+      "https://chocolate.com/","https://cubbybeds.com/","https://dimebeautyco.com/",
+      "https://drinknowhey.com","https://goldielocks.com/","https://handmadestudioco.com/",
+      "https://hustle24clo.com/","https://licorice.com/","https://mybodyrestore.com/",
+      "https://nipyata.com/","https://ownyouraura.com/","https://pensavings.com/",
+      "https://shellycove.com/","https://shopbrickcraft.com/","https://smallbusinessshirts.com/",
+      "https://taffy.com/","https://thecustomcaptain.com/","https://thepatchbrand.com/",
+      "https://titancasket.com/","https://trystrips.com/","https://www.5strands.com/",
+      "https://www.boostbiome.co/","https://www.carbonaccents.co.uk/","https://www.diviofficial.com/",
+      "https://www.eskcare.com/","https://www.gestaltwinecompany.com/","https://www.muddybites.com/",
+      "https://www.roewellness.com/","https://www.romadesignerjewelry.com/","https://www.sb3coating.com/",
+      "https://www.skoutorganic.com/","https://www.trybetterbrand.com/","https://www.vyperindustrial.com/",
+      "https://www.westsoundcandlesupply.com/","https://www.yuzustud.io/"
+    ];
+    var host = function (u) { return u.replace(/^https?:\/\//, "").split("/")[0]; };
+    var slug = function (h) { return h.replace(/^www\./, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); };
+
+    var html = urls.map(function (u) {
+      var h = host(u);
+      var display = h.replace(/^www\./, "");
+      var s = slug(h);
+      var img = base + "assets/work/" + s + ".jpg";
+      return '<a class="work-item" href="' + u + '" target="_blank" rel="noopener" aria-label="' + display + '">' +
+        '<span class="work-thumb"><img loading="lazy" alt="' + display + '" src="' + img + '" ' +
+        'onerror="this.style.display=\'none\';this.parentNode.classList.add(\'work-thumb--fallback\');this.parentNode.setAttribute(\'data-label\',\'' + display + '\');"></span>' +
+        '<span class="work-cap"><span class="work-name">' + display + '</span><span class="work-go" aria-hidden="true">↗</span></span>' +
+        '</a>';
+    }).join("");
+    grid.innerHTML = html;
+  })();
 
   /* ---- Widget flutuante de contacto (WhatsApp) ---- */
   (function () {

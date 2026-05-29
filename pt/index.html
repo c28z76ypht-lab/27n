@@ -32,6 +32,7 @@
       </a>
       <nav class="nav" aria-label="Navegação principal">
         <a href="#solucao">Como ajudamos</a>
+        <a href="#trabalho">Trabalho</a>
         <a href="#processo">Processo</a>
         <a href="#planos">Planos</a>
         <a href="#marcar">Marcar</a>
@@ -47,6 +48,7 @@
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
       <a href="#solucao">Como ajudamos</a>
+      <a href="#trabalho">Trabalho</a>
       <a href="#processo">Processo</a>
       <a href="#planos">Planos</a>
       <a href="#marcar">Marcar</a>
@@ -227,6 +229,18 @@
       </div>
     </section>
 
+    <!-- ============ TRABALHO ============ -->
+    <section class="section section--alt" id="trabalho">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Trabalho</p>
+          <h2 class="section__title">Algumas das lojas que construímos.</h2>
+          <p class="section__intro">Uma amostra das 174 lojas Shopify que lançámos desde 2020.</p>
+        </header>
+        <div class="work-grid" id="work-grid"></div>
+      </div>
+    </section>
+
     <!-- ============ TESTEMUNHOS ============ -->
     <section class="section" id="sobre">
       <div class="container">
@@ -340,7 +354,11 @@
         <h2>Tens um projeto Shopify em mente?</h2>
         <p>Conta-nos o que precisas. Respondemos em 24&nbsp;horas com os próximos passos.</p>
 
-        <form class="cta__form" id="contact-form" novalidate>
+        <form class="cta__form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="ccd3643b-788f-4d38-b5c9-d80562473732" />
+          <input type="hidden" name="subject" value="Novo pedido de projeto — 27n.pt (PT)" />
+          <input type="hidden" name="from_name" value="27n.pt website" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" autocomplete="name" required />
@@ -377,6 +395,7 @@
       </div>
       <nav class="footer__nav" aria-label="Rodapé">
         <a href="#solucao">Como ajudamos</a>
+        <a href="#trabalho">Trabalho</a>
         <a href="#processo">Processo</a>
         <a href="#planos">Planos</a>
         <a href="#marcar">Marcar reunião</a>
