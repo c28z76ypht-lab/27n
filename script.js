@@ -220,8 +220,8 @@
         '<button type="button" class="fab-close">' + t.close + ' ✕</button>' +
       '</div>' +
       '<div class="fab-launch">' +
-        '<button type="button" class="fab-trigger" aria-expanded="false" aria-controls="fab-panel" aria-label="' + t.trigger + '">' +
-          '<span>' + t.trigger + '</span> 💬<span class="fab-badge">1</span></button>' +
+        '<button type="button" class="fab-trigger" aria-expanded="false" aria-controls="fab-panel" aria-label="' + t.trigger + '" title="' + t.trigger + '">' +
+          waIcon + '<span class="fab-badge">1</span></button>' +
       '</div>';
     document.body.appendChild(el);
 
