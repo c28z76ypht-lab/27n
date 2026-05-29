@@ -359,6 +359,50 @@ a { color: inherit; text-decoration: none; }
   .fab-bubble { display: none; }
 }
 
+/* ---------- Page hero (subpáginas: careers, etc.) ---------- */
+.page-hero {
+  position: relative; color: var(--on-blue); overflow: hidden; text-align: center;
+  margin-top: -70px; padding: clamp(150px, 18vw, 200px) 0 clamp(58px, 8vw, 92px);
+  background:
+    radial-gradient(120% 90% at 80% 10%, var(--hero-to), transparent 60%),
+    linear-gradient(135deg, var(--hero-from) 0%, var(--blue) 55%, var(--hero-to) 100%);
+}
+.page-hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(100% 60% at 50% 120%, rgba(4,12,40,0.35), transparent 70%); pointer-events: none; }
+.page-hero__beams { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.page-hero__inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+.page-hero .eyebrow { margin-bottom: 22px; }
+.page-hero h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2.4rem, 5.5vw, 4.2rem); letter-spacing: -0.025em; line-height: 1.06; }
+.page-hero__lead { font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--on-blue-soft); max-width: 56ch; margin: 22px auto 0; }
+.page-hero__meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.page-hero__meta .job__tag { color: #fff; background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); }
+
+/* ---------- Jobs list (careers) ---------- */
+.jobs { display: grid; gap: 16px; max-width: 860px; margin: 0 auto; }
+.job {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 24px 30px; transition: transform 0.3s var(--ease), box-shadow 0.3s, border-color 0.3s;
+}
+.job:hover { transform: translateY(-4px); box-shadow: 0 20px 44px -24px rgba(20,83,230,0.4); border-color: transparent; }
+.job__info h3 { font-size: 1.22rem; margin-bottom: 12px; color: var(--ink); }
+.job__tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.job__tag {
+  font-family: var(--font-display); font-weight: 600; font-size: 0.76rem; letter-spacing: 0.02em;
+  color: var(--blue-700); background: rgba(31,107,255,0.08); border: 1px solid rgba(31,107,255,0.14);
+  border-radius: 999px; padding: 5px 12px;
+}
+.job__go { flex: none; font-family: var(--font-display); font-weight: 600; color: var(--blue); transition: transform 0.2s; }
+.job:hover .job__go { transform: translateX(3px); }
+
+/* ---------- Checklist ---------- */
+.checklist { list-style: none; display: grid; gap: 12px; }
+.checklist li { position: relative; padding-left: 30px; color: var(--ink-soft); }
+.checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--blue); font-weight: 700; }
+
+@media (max-width: 600px) {
+  .job { flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
 /* ---------- Reveal ---------- */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
