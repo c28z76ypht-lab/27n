@@ -161,17 +161,14 @@
     var urls = [
       "https://adamryansuits.com/","https://bosssupplements.com/","https://caramels.com/",
       "https://chocolate.com/","https://cubbybeds.com/","https://dimebeautyco.com/",
-      "https://drinknowhey.com","https://goldielocks.com/","https://handmadestudioco.com/",
-      "https://hustle24clo.com/","https://licorice.com/","https://mybodyrestore.com/",
-      "https://nipyata.com/","https://ownyouraura.com/","https://pensavings.com/",
-      "https://shellycove.com/","https://shopbrickcraft.com/","https://smallbusinessshirts.com/",
+      "https://goldielocks.com/","https://licorice.com/","https://mybodyrestore.com/",
+      "https://pensavings.com/","https://shellycove.com/","https://shopbrickcraft.com/",
       "https://taffy.com/","https://thecustomcaptain.com/","https://thepatchbrand.com/",
       "https://titancasket.com/","https://trystrips.com/","https://www.5strands.com/",
-      "https://www.boostbiome.co/","https://www.carbonaccents.co.uk/","https://www.diviofficial.com/",
-      "https://www.eskcare.com/","https://www.gestaltwinecompany.com/","https://www.muddybites.com/",
-      "https://www.roewellness.com/","https://www.romadesignerjewelry.com/","https://www.sb3coating.com/",
-      "https://www.skoutorganic.com/","https://www.trybetterbrand.com/","https://www.vyperindustrial.com/",
-      "https://www.westsoundcandlesupply.com/","https://www.yuzustud.io/"
+      "https://www.carbonaccents.co.uk/","https://www.diviofficial.com/","https://www.eskcare.com/",
+      "https://www.gestaltwinecompany.com/","https://www.muddybites.com/","https://www.roewellness.com/",
+      "https://www.romadesignerjewelry.com/","https://www.skoutorganic.com/","https://www.trybetterbrand.com/",
+      "https://www.vyperindustrial.com/"
     ];
     var host = function (u) { return u.replace(/^https?:\/\//, "").split("/")[0]; };
     var slug = function (h) { return h.replace(/^www\./, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); };
