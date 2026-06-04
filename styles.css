@@ -254,10 +254,15 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Pricing ---------- */
 .pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
 .pricing--4 { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.pricing--5 { grid-template-columns: repeat(5, 1fr); gap: 14px; }
 .plan { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-xl); padding: 34px 28px; position: relative; display: flex; flex-direction: column; gap: 8px; transition: background 0.3s, border-color 0.3s, transform 0.3s var(--ease); }
 .plan:not(.plan--featured):hover { background: var(--card-hover); border-color: var(--line-strong); transform: translateY(-4px); }
 .pricing--4 .plan { padding: 30px 24px; }
 .pricing--4 .plan__price { font-size: 1.7rem; }
+.pricing--5 .plan { padding: 28px 20px; }
+.pricing--5 .plan__price { font-size: 1.5rem; }
+.pricing--5 .plan h3 { font-size: 1.18rem; }
+.pricing--5 .plan li { padding-left: 22px; font-size: 0.9rem; }
 .plan--featured { background: linear-gradient(160deg, var(--blue-700), var(--blue)); color: #fff; border-color: transparent; box-shadow: 0 30px 60px -28px rgba(20,83,230,0.6); transform: translateY(-8px); }
 .plan__badge { position: absolute; top: 18px; right: 18px; font-family: var(--font-display); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(255,255,255,0.2); padding: 5px 11px; border-radius: 999px; }
 .plan h3 { font-size: 1.3rem; }
@@ -424,6 +429,9 @@ a { color: inherit; text-decoration: none; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+  .pricing--5 { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+}
 @media (max-width: 940px) {
   .nav, .nav__cta { display: none; }
   .nav-toggle { display: flex; }
@@ -431,13 +439,13 @@ a { color: inherit; text-decoration: none; }
   .mobile-menu[hidden] { display: none; }
   .hero__inner { grid-template-columns: 1fr; gap: 40px; }
   .cards--3, .steps, .quotes, .pricing { grid-template-columns: 1fr; }
-  .pricing--4 { grid-template-columns: repeat(2, 1fr); }
+  .pricing--4, .pricing--5 { grid-template-columns: repeat(2, 1fr); }
   .audience, .work-grid { grid-template-columns: repeat(2, 1fr); }
   .plan--featured { transform: none; }
 }
 @media (max-width: 600px) {
   .hero__card-stats { grid-template-columns: 1fr 1fr; }
-  .benefits, .audience, .pricing--4 { grid-template-columns: 1fr; }
+  .benefits, .audience, .pricing--4, .pricing--5 { grid-template-columns: 1fr; }
   .statband__grid { grid-template-columns: repeat(2, 1fr); gap: 34px 16px; }
   .cta__form { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
