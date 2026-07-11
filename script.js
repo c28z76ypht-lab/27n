@@ -4,6 +4,65 @@
 (function () {
   "use strict";
 
+  /* ---- Theme (light / dark) ---- */
+  (function () {
+    var root = document.documentElement;
+    var storageKey = "27n-theme";
+    var meta = document.querySelector('meta[name="theme-color"]');
+
+    var updateMeta = function () {
+      if (!meta) return;
+      var color = getComputedStyle(root).getPropertyValue("--theme-color").trim();
+      if (color) meta.setAttribute("content", color);
+    };
+
+    var calTheme = function (theme) {
+      if (typeof Cal === "undefined" || !Cal.ns || !Cal.ns.meeting) return;
+      try { Cal.ns.meeting("ui", { theme: theme }); } catch (e) { /* noop */ }
+    };
+
+    var labels = function (theme) {
+      var isEN = (root.lang || "en").slice(0, 2) === "en";
+      return theme === "dark"
+        ? (isEN ? "Switch to light mode" : "Mudar para modo claro")
+        : (isEN ? "Switch to dark mode" : "Mudar para modo escuro");
+    };
+
+    var syncToggle = function (theme) {
+      var label = labels(theme);
+      ["theme-toggle", "theme-toggle-menu"].forEach(function (id) {
+        var btn = document.getElementById(id);
+        if (btn) btn.setAttribute("aria-label", label);
+      });
+    };
+
+    var applyTheme = function (theme) {
+      root.setAttribute("data-theme", theme);
+      updateMeta();
+      syncToggle(theme);
+      calTheme(theme);
+    };
+
+    var toggleTheme = function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      localStorage.setItem(storageKey, next);
+      applyTheme(next);
+    };
+
+    applyTheme(root.getAttribute("data-theme") || "dark");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      ["theme-toggle", "theme-toggle-menu"].forEach(function (id) {
+        var btn = document.getElementById(id);
+        if (btn) btn.addEventListener("click", toggleTheme);
+      });
+    });
+
+    window.__27nSetCalTheme = function () {
+      calTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+    };
+  })();
+
   /* ---- Ano no rodapé ---- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
