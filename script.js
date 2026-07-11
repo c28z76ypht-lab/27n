@@ -152,7 +152,7 @@
     });
   }
 
-  /* ---- Portfólio: grelha de lojas (screenshots) ---- */
+  /* ---- Portfólio: grelha de lojas (logos das marcas) ---- */
   (function () {
     var grid = document.getElementById("work-grid");
     if (!grid) return;
@@ -172,15 +172,19 @@
     ];
     var host = function (u) { return u.replace(/^https?:\/\//, "").split("/")[0]; };
     var slug = function (h) { return h.replace(/^www\./, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); };
+    var brandLabel = function (h) {
+      var name = h.replace(/^www\./, "").split(".")[0];
+      return name.charAt(0).toUpperCase() + name.slice(1);
+    };
 
     var html = urls.map(function (u) {
       var h = host(u);
       var display = h.replace(/^www\./, "");
       var s = slug(h);
-      var img = base + "assets/work/" + s + ".jpg";
+      var img = base + "assets/logos/" + s + ".png";
       return '<a class="work-item" href="' + u + '" target="_blank" rel="noopener" aria-label="' + display + '">' +
-        '<span class="work-thumb"><img loading="lazy" alt="' + display + '" src="' + img + '" ' +
-        'onerror="this.style.display=\'none\';this.parentNode.classList.add(\'work-thumb--fallback\');this.parentNode.setAttribute(\'data-label\',\'' + display + '\');"></span>' +
+        '<span class="work-thumb" data-label="' + brandLabel(h) + '"><img loading="lazy" alt="' + display + '" src="' + img + '" ' +
+        'onerror="this.style.display=\'none\';this.parentNode.classList.add(\'work-thumb--fallback\');"></span>' +
         '<span class="work-cap"><span class="work-name">' + display + '</span><span class="work-go" aria-hidden="true">↗</span></span>' +
         '</a>';
     }).join("");
