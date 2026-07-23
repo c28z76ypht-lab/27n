@@ -572,6 +572,20 @@ a { color: inherit; text-decoration: none; }
 .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--blue); font-weight: 700; }
 
 /* ---------- Video portfolio ---------- */
+.video-project-nav a { transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+.video-project-nav a:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-1px);
+}
+.video-subsection {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  color: var(--ink);
+}
+.video-subsection--spaced { margin-top: 52px; }
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -580,6 +594,10 @@ a { color: inherit; text-decoration: none; }
 .video-grid--featured {
   grid-template-columns: 1fr 1fr 1.4fr;
   align-items: start;
+}
+.video-grid--single {
+  grid-template-columns: minmax(0, 920px);
+  justify-content: start;
 }
 .video-card {
   background: var(--card);
