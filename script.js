@@ -16,11 +16,6 @@
       if (color) meta.setAttribute("content", color);
     };
 
-    var calTheme = function (theme) {
-      if (typeof Cal === "undefined" || !Cal.ns || !Cal.ns.meeting) return;
-      try { Cal.ns.meeting("ui", { theme: theme }); } catch (e) { /* noop */ }
-    };
-
     var labels = function (theme) {
       var isEN = (root.lang || "en").slice(0, 2) === "en";
       return theme === "dark"
@@ -40,7 +35,6 @@
       root.setAttribute("data-theme", theme);
       updateMeta();
       syncToggle(theme);
-      calTheme(theme);
     };
 
     var toggleTheme = function () {
@@ -57,10 +51,6 @@
         if (btn) btn.addEventListener("click", toggleTheme);
       });
     });
-
-    window.__27nSetCalTheme = function () {
-      calTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
-    };
   })();
 
   /* ---- Ano no rodapé ---- */
