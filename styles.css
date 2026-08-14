@@ -424,7 +424,7 @@ a { color: inherit; text-decoration: none; }
 .plan--featured li::before { color: #7dffb0; }
 .plan .btn { margin-top: auto; }
 
-/* ---------- Proton Calendar booking ---------- */
+/* ---------- Google Calendar booking ---------- */
 .booking-panel {
   display: flex; justify-content: center; align-items: center;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-xl);
