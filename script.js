@@ -248,6 +248,7 @@
       ? "Hi! I came from the 27n website and I'd like to talk about a project."
       : "Olá! Vim do site da 27n e gostava de falar sobre um projeto.");
     var team = [
+      { name: "27N team", phone: "351911579030" },
       { name: "Gonçalo", phone: "351964184075" },
       { name: "Alexandre", phone: "351961904305" },
       { name: "Nuno", phone: "351960141140" }
