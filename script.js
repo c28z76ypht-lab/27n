@@ -236,6 +236,47 @@
     grid.innerHTML = html;
   })();
 
+  /* ---- Logos marquee ---- */
+  (function () {
+    var track = document.getElementById("logos-track");
+    if (!track) return;
+    var inPt = /\/pt(\/|$)/.test(location.pathname);
+    var base = inPt ? "../" : "";
+    var logos = [
+      "5strands-com","adamryansuits-com","bosssupplements-com","caramels-com",
+      "carbonaccents-co-uk","chocolate-com","cubbybeds-com","dimebeautyco-com",
+      "eskcare-com","goldielocks-com","licorice-com","muddybites-com",
+      "mybodyrestore-com","pensavings-com","roewellness-com","shellycove-com",
+      "shopbrickcraft-com","skoutorganic-com","taffy-com","thecustomcaptain-com",
+      "thepatchbrand-com","titancasket-com","trystrips-com","vyperindustrial-com"
+    ];
+    var label = function (slug) {
+      return slug.replace(/-com$/, "").replace(/-co-uk$/, "").replace(/-/g, " ");
+    };
+    var items = logos.map(function (slug) {
+      return '<span class="logos__item"><img src="' + base + 'assets/logos/' + slug + '.png" alt="' +
+        label(slug) + '" loading="lazy" width="120" height="36"></span>';
+    }).join("");
+    track.innerHTML = items + items;
+  })();
+
+  /* ---- Cookie consent ---- */
+  (function () {
+    var banner = document.getElementById("cookie-banner");
+    if (!banner) return;
+    var key = "27n-cookie-consent";
+    try {
+      if (localStorage.getItem(key)) return;
+    } catch (e) { /* ignore */ }
+    banner.hidden = false;
+    banner.querySelectorAll("[data-cookie]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        try { localStorage.setItem(key, btn.getAttribute("data-cookie")); } catch (e) { /* ignore */ }
+        banner.hidden = true;
+      });
+    });
+  })();
+
   /* ---- Widget flutuante de contacto (WhatsApp → 27N team) ---- */
   (function () {
     var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";

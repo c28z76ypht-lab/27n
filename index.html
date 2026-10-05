@@ -32,9 +32,10 @@
         <span class="logo__mark">27</span><span class="logo__n">n</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#solucao">How we help</a>
+        <a href="#servicos">Services</a>
         <a href="#trabalho">Work</a>
         <a href="#processo">Process</a>
+        <a href="#faq">FAQ</a>
         <a href="#marcar">Book</a>
         <a href="careers/index.html">Careers</a>
       </nav>
@@ -52,9 +53,10 @@
       </button>
     </div>
     <div class="mobile-menu" id="mobile-menu" hidden>
-      <a href="#solucao">How we help</a>
+      <a href="#servicos">Services</a>
       <a href="#trabalho">Work</a>
       <a href="#processo">Process</a>
+      <a href="#faq">FAQ</a>
       <a href="#marcar">Book</a>
       <a href="careers/index.html">Careers</a>
       <a href="#contacto" class="btn btn--white">Start a project</a>
@@ -126,6 +128,16 @@
       </div>
     </section>
 
+    <!-- ============ CLIENT LOGOS ============ -->
+    <section class="logos" aria-label="Selected brands">
+      <div class="container">
+        <p class="logos__label reveal">Brands we've helped sell more</p>
+      </div>
+      <div class="logos__track-wrap" aria-hidden="true">
+        <div class="logos__track" id="logos-track"></div>
+      </div>
+    </section>
+
     <!-- ============ PROBLEM → SOLUTION ============ -->
     <section class="section" id="solucao">
       <div class="container">
@@ -158,36 +170,108 @@
       </div>
     </section>
 
-    <!-- ============ HOW WE WORK (3 steps) ============ -->
-    <section class="section section--alt" id="processo">
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Services</p>
+          <h2 class="section__title">Everything you need to launch, migrate and grow on Shopify.</h2>
+          <p class="section__intro">The same core services you find across top Shopify Partner agencies — built around one platform and one goal: more sales.</p>
+        </header>
+        <div class="services">
+          <article class="service reveal">
+            <h3>Shopify store development</h3>
+            <p>Custom themes and Online Store 2.0 builds focused on speed, UX and conversion — not generic templates.</p>
+            <ul class="service__list">
+              <li>Custom theme development</li>
+              <li>Shopify Plus &amp; checkout extensibility</li>
+              <li>Performance &amp; Core Web Vitals</li>
+            </ul>
+          </article>
+          <article class="service reveal">
+            <h3>Migrations</h3>
+            <p>Replatform from WooCommerce, Magento, PrestaShop or Wix without losing SEO, customers or orders.</p>
+            <ul class="service__list">
+              <li>Catalogue, customers &amp; order history</li>
+              <li>301 redirects URL by URL</li>
+              <li>Zero-downtime cutover plan</li>
+            </ul>
+          </article>
+          <article class="service reveal">
+            <h3>Apps &amp; integrations</h3>
+            <p>Connect Shopify to your ERP, CRM, logistics, payments and marketing stack so operations stop living in spreadsheets.</p>
+            <ul class="service__list">
+              <li>ERP / CRM / logistics sync</li>
+              <li>Private &amp; custom apps</li>
+              <li>Automations with Shopify Flow</li>
+            </ul>
+          </article>
+          <article class="service reveal">
+            <h3>CRO &amp; UX</h3>
+            <p>We audit the funnel, fix friction and ship iterative improvements that turn more visits into orders.</p>
+            <ul class="service__list">
+              <li>Conversion audits</li>
+              <li>Checkout &amp; cart UX</li>
+              <li>A/B testing roadmap</li>
+            </ul>
+          </article>
+          <article class="service reveal">
+            <h3>Headless / Hydrogen</h3>
+            <p>When you need a unique storefront experience, we build headless architectures on Hydrogen and the Shopify API.</p>
+            <ul class="service__list">
+              <li>Hydrogen storefronts</li>
+              <li>Custom product experiences</li>
+              <li>API-first architectures</li>
+            </ul>
+          </article>
+          <article class="service reveal">
+            <h3>Support &amp; growth</h3>
+            <p>Post-launch partnership: maintenance, releases, training and continuous optimisation so the store keeps improving.</p>
+            <ul class="service__list">
+              <li>Technical support retainer</li>
+              <li>Team training</li>
+              <li>Monthly growth sprints</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK (4 steps) ============ -->
+    <section class="section" id="processo">
       <div class="container">
         <header class="section__head section__head--center reveal">
           <p class="section__kicker">How we work</p>
-          <h2 class="section__title">From brief to growth, in three phases.</h2>
+          <h2 class="section__title">From diagnosis to growth, in four phases.</h2>
         </header>
 
-        <div class="steps">
+        <div class="steps steps--4">
           <article class="step reveal">
             <span class="step__num">01</span>
-            <h3>Discovery</h3>
-            <p>We get to know the business, goals and audience. We define scope, timeline and success metrics.</p>
+            <h3>Audit &amp; discovery</h3>
+            <p>We analyse your store, market and goals. Scope, timeline and success metrics before any code.</p>
           </article>
           <article class="step reveal">
             <span class="step__num">02</span>
-            <h3>Design &amp; Development</h3>
-            <p>We design and build the store on Shopify, focused on performance, UX and ease of management.</p>
+            <h3>Strategy &amp; plan</h3>
+            <p>A clear roadmap: architecture, UX priorities, integrations and conversion opportunities.</p>
           </article>
           <article class="step reveal">
             <span class="step__num">03</span>
-            <h3>Launch &amp; Growth</h3>
-            <p>A supported go-live and continuous optimisation. The store improves month after month.</p>
+            <h3>Design &amp; build</h3>
+            <p>We design and develop on Shopify with short sprints and visible weekly progress.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Launch &amp; grow</h3>
+            <p>Supported go-live, then continuous CRO, performance and feature work month after month.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ BENEFITS (4) ============ -->
-    <section class="section">
+    <section class="section section--alt">
       <div class="container">
         <header class="section__head reveal">
           <p class="section__kicker">Why 27n</p>
@@ -215,17 +299,19 @@
       </div>
     </section>
 
-    <!-- ============ WHO IT'S FOR ============ -->
-    <section class="section section--alt">
+    <!-- ============ INDUSTRIES ============ -->
+    <section class="section" id="industrias">
       <div class="container">
         <header class="section__head reveal">
-          <p class="section__kicker">Who it's for</p>
-          <h2 class="section__title">Built for those who take e-commerce seriously.</h2>
+          <p class="section__kicker">Industries</p>
+          <h2 class="section__title">Built for brands that take e-commerce seriously.</h2>
         </header>
 
         <div class="audience">
-          <article class="aud reveal"><span class="aud__tag">Emerging brands</span><p>You want to launch your first store on solid foundations, ready to grow.</p></article>
-          <article class="aud reveal"><span class="aud__tag">Growing e-commerce</span><p>You already sell online and need more performance, conversion and process.</p></article>
+          <article class="aud reveal"><span class="aud__tag">Fashion &amp; lifestyle</span><p>Lookbooks, size guides, variants and experiences that match how your customers shop.</p></article>
+          <article class="aud reveal"><span class="aud__tag">Beauty &amp; wellness</span><p>Subscriptions, kits, PDP storytelling and retention flows that lift LTV.</p></article>
+          <article class="aud reveal"><span class="aud__tag">Food &amp; gourmet</span><p>Fresh logistics, bundles, subscriptions and checkout rules that protect margins.</p></article>
+          <article class="aud reveal"><span class="aud__tag">B2B &amp; wholesale</span><p>Price lists, company accounts, quotes and catalogues built for wholesale ops.</p></article>
           <article class="aud reveal"><span class="aud__tag">Migrations</span><p>You're on another platform and want to move to Shopify without the headaches.</p></article>
           <article class="aud reveal"><span class="aud__tag">Shopify Plus</span><p>Larger operations that need automation, integrations and dedicated support.</p></article>
         </div>
@@ -244,7 +330,7 @@
     </section>
 
     <!-- ============ SELECTED WORK ============ -->
-    <section class="section section--alt" id="trabalho">
+    <section class="section" id="trabalho">
       <div class="container">
         <header class="section__head reveal">
           <p class="section__kicker">Selected work</p>
@@ -256,7 +342,7 @@
     </section>
 
     <!-- ============ TESTIMONIALS ============ -->
-    <section class="section" id="sobre">
+    <section class="section section--alt" id="sobre">
       <div class="container">
         <header class="section__head reveal">
           <p class="section__kicker">Who trusts us</p>
@@ -281,6 +367,42 @@
       </div>
     </section>
 
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__kicker">FAQ</p>
+          <h2 class="section__title">Questions brands usually ask before starting.</h2>
+        </header>
+        <div class="faq" data-faq>
+          <details class="faq__item reveal">
+            <summary>How much does a Shopify project cost?</summary>
+            <p>It depends on scope: custom theme, migrations, integrations and Plus features change the budget. After a discovery call we send a fixed proposal in 48–72h — no retainers required to get a clear number.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>How long does a store take to launch?</summary>
+            <p>A focused custom build typically lands in 6–10 weeks. Migrations with ERP integrations or multi-market setups can take longer. You get a roadmap with milestones from day one.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Can you migrate from WooCommerce, Magento or PrestaShop?</summary>
+            <p>Yes. We migrate catalogue, customers, order history and SEO with 301 redirects URL by URL, so you don't lose organic traffic during the switch.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do I need Shopify Plus?</summary>
+            <p>Plus makes sense at higher volume or when you need checkout extensibility, B2B, advanced automation or expansion stores. We'll help you decide without upselling more than you need.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>What happens after launch?</summary>
+            <p>Launch is the start. Most clients stay with us for support, CRO and continuous improvement. We can also train your team to manage day-to-day catalog and content.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do you only work with Shopify?</summary>
+            <p>Yes. We've been a Shopify Select Partner since 2021 and focus exclusively on the platform — themes, Plus, Hydrogen, apps and growth.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ BOOK A MEETING (Google Calendar) ============ -->
     <section class="section section--alt" id="marcar">
       <div class="container">
@@ -298,6 +420,7 @@
           >
             Pick a time
           </a>
+          <a class="btn btn--outline btn--lg" href="contact/index.html">Or use the contact form</a>
         </div>
       </div>
     </section>
@@ -322,6 +445,27 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
+          <div class="field">
+            <label for="empresa">Company</label>
+            <input type="text" id="empresa" name="empresa" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="telefone">Phone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" />
+          </div>
+          <div class="field field--full">
+            <label for="servico">What do you need?</label>
+            <select id="servico" name="servico">
+              <option value="">Select an option</option>
+              <option>New Shopify store</option>
+              <option>Migration to Shopify</option>
+              <option>Shopify Plus</option>
+              <option>CRO / optimisation</option>
+              <option>Apps &amp; integrations</option>
+              <option>Support &amp; growth</option>
+              <option>Other</option>
+            </select>
+          </div>
           <div class="field field--full">
             <label for="mensagem">About the project</label>
             <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
@@ -335,6 +479,7 @@
         <div class="cta__alts">
           <p class="cta__or">Or write to <a href="mailto:ola@27n.pt">ola@27n.pt</a></p>
           <p class="cta__or">27N team · <a href="tel:+351911579030">+351 911 579 030</a> · <a href="https://wa.me/351911579030" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p class="cta__or"><a href="contact/index.html">Full contact page →</a></p>
         </div>
       </div>
     </section>
@@ -355,17 +500,28 @@
         </div>
       </div>
       <nav class="footer__nav" aria-label="Footer">
-        <a href="#solucao">How we help</a>
+        <a href="#servicos">Services</a>
         <a href="#trabalho">Work</a>
         <a href="#processo">Process</a>
+        <a href="#faq">FAQ</a>
         <a href="#marcar">Book a meeting</a>
-        <a href="#sobre">About</a>
         <a href="careers/index.html">Careers</a>
-        <a href="#contacto">Contact</a>
+        <a href="contact/index.html">Contact</a>
+        <a href="privacy/index.html">Privacy</a>
       </nav>
       <p class="footer__meta">© <span id="year">2026</span> 27n · Shopify Select Partner since 2021</p>
     </div>
   </footer>
+
+  <div class="cookie" id="cookie-banner" hidden>
+    <div class="cookie__inner">
+      <p>We use essential cookies to run the site and optional analytics to improve it. See our <a href="privacy/index.html">privacy policy</a>.</p>
+      <div class="cookie__actions">
+        <button type="button" class="btn btn--glass btn--sm" data-cookie="essential">Essential only</button>
+        <button type="button" class="btn btn--white btn--sm" data-cookie="all">Accept all</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
