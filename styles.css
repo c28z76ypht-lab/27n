@@ -19,7 +19,7 @@
 
   --theme-color: #05070f;
 
-  /* Accent surfaces (hero, stats, CTA) — always dark in every theme */
+  /* Accent surfaces (hero, stats, CTA): always dark in every theme */
   --surface-accent: #060d1f;
   --surface-accent-top: #0f2252;
   --on-accent: #ffffff;
