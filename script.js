@@ -205,8 +205,7 @@
   (function () {
     var grid = document.getElementById("work-grid");
     if (!grid) return;
-    var inPt = /\/pt(\/|$)/.test(location.pathname);
-    var base = inPt ? "../" : "";
+    var base = "/";
     var urls = [
       "https://adamryansuits.com/","https://bosssupplements.com/","https://caramels.com/",
       "https://chocolate.com/","https://cubbybeds.com/","https://dimebeautyco.com/",
@@ -240,8 +239,7 @@
   (function () {
     var track = document.getElementById("logos-track");
     if (!track) return;
-    var inPt = /\/pt(\/|$)/.test(location.pathname);
-    var base = inPt ? "../" : "";
+    var base = "/";
     var logos = [
       "5strands-com","adamryansuits-com","bosssupplements-com","caramels-com",
       "carbonaccents-co-uk","chocolate-com","cubbybeds-com","dimebeautyco-com",

@@ -1,8 +1,9 @@
 {
   "trailingSlash": true,
   "redirects": [
-    { "source": "/en", "destination": "/", "permanent": true },
-    { "source": "/en/", "destination": "/", "permanent": true },
+    { "source": "/", "destination": "/pt/", "permanent": true },
+    { "source": "/index.html", "destination": "/en/", "permanent": true },
+    { "source": "/en", "destination": "/en/", "permanent": true },
     { "source": "/agencia-shopify", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/agencia-shopify/", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/migracao-shopify", "destination": "/pt/migracao-shopify/", "permanent": true },
