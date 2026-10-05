@@ -1,0 +1,28 @@
+{
+  "name": "27n",
+  "short_name": "27n",
+  "description": "Agência Shopify Select Partner em Portugal. Lojas Shopify que vendem.",
+  "start_url": "/pt/",
+  "display": "standalone",
+  "background_color": "#05070f",
+  "theme_color": "#05070f",
+  "lang": "pt-PT",
+  "icons": [
+    {
+      "src": "/assets/seo/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/seo/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/seo/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

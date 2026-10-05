@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="27n">
+  <rect width="64" height="64" rx="14" fill="#05070f"/>
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="#5b86ff" stroke-width="2"/>
+  <text x="32" y="42" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" font-size="26" fill="#ffffff">27<tspan fill="#5b86ff">n</tspan></text>
+</svg>
