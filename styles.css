@@ -641,6 +641,22 @@ a { color: inherit; text-decoration: none; }
   .cookie { left: 12px; right: 12px; bottom: 12px; }
 }
 
+.hero__lead a,
+.page-hero__lead a,
+.card a {
+  color: inherit;
+  border-bottom: 1.5px solid rgba(91,134,255,0.55);
+  font-weight: 600;
+}
+.hero__lead a:hover,
+.page-hero__lead a:hover,
+.card a:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+.has-hero .hero__lead a { color: var(--on-accent); border-color: rgba(255,255,255,0.45); }
+.has-hero .hero__lead a:hover { border-color: #fff; }
+
 /* ---------- SEO crumbs ---------- */
 .seo-crumbs {
   font-family: var(--font-display); font-size: 0.85rem; color: var(--on-accent-soft);
