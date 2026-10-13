@@ -13,7 +13,13 @@
     { "source": "/agencia-shopify", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/agencia-shopify/", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/migracao-shopify", "destination": "/pt/migracao-shopify/", "permanent": true },
-    { "source": "/migracao-shopify/", "destination": "/pt/migracao-shopify/", "permanent": true }
+    { "source": "/migracao-shopify/", "destination": "/pt/migracao-shopify/", "permanent": true },
+    { "source": "/integracoes-erp", "destination": "/pt/integracoes-erp/", "permanent": true },
+    { "source": "/integracoes-erp/", "destination": "/pt/integracoes-erp/", "permanent": true },
+    { "source": "/ai-shopify", "destination": "/pt/ai-shopify/", "permanent": true },
+    { "source": "/ai-shopify/", "destination": "/pt/ai-shopify/", "permanent": true },
+    { "source": "/marketing-shopify", "destination": "/pt/marketing-shopify/", "permanent": true },
+    { "source": "/marketing-shopify/", "destination": "/pt/marketing-shopify/", "permanent": true }
   ],
   "headers": [
     {

@@ -76,6 +76,51 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.27n.pt/pt/integracoes-erp/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/integracoes-erp/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-erp/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/integracoes-erp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/shopify-erp/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-erp/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/integracoes-erp/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/ai-shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/ai-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/ai-shopify/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/shopify-ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-ai/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/ai-shopify/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/marketing-shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/marketing-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/marketing-shopify/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/shopify-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/marketing-shopify/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.27n.pt/pt/contact/</loc>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/contact/"/>
