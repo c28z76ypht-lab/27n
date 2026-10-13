@@ -184,6 +184,16 @@ a { color: inherit; text-decoration: none; }
 }
 .btn--outline { background: rgba(255,255,255,0.02); color: var(--ink); border-color: var(--line-strong); }
 .btn--outline:hover { border-color: var(--blue); color: var(--blue); }
+.btn--primary {
+  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 12px 28px -14px rgba(31, 79, 240, 0.75);
+}
+.btn--primary:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 16px 36px -14px rgba(31, 79, 240, 0.85);
+}
 .btn--sm { padding: 9px 17px; font-size: 0.875rem; }
 .btn--lg { padding: 16px 30px; font-size: 1.02rem; }
 
@@ -847,4 +857,142 @@ a { color: inherit; text-decoration: none; }
   .beam { animation: none; }
   .logos__track { animation: none; }
   .btn:hover, .card:hover, .service:hover { transform: none; }
+}
+
+/* ============================================================
+   Secure Links (client data submission)
+   ============================================================ */
+.secure-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 420px at 50% -10%, rgba(91, 134, 255, 0.22), transparent 60%),
+    radial-gradient(700px 360px at 80% 110%, rgba(31, 79, 240, 0.12), transparent 55%),
+    var(--bg);
+}
+.secure-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px 36px;
+  gap: 28px;
+}
+.secure-logo {
+  font-size: 2rem;
+  color: var(--ink);
+}
+.secure-logo .logo__n { color: var(--blue); }
+.secure-card {
+  width: min(100%, 560px);
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 28px 60px -36px rgba(12, 18, 34, 0.55);
+}
+.secure-card__head {
+  background: linear-gradient(120deg, var(--surface-accent-top), var(--surface-accent));
+  color: var(--on-accent);
+  text-align: center;
+  padding: 22px 24px;
+}
+.secure-card__head h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.secure-card__body { padding: 28px 28px 30px; }
+.secure-ticket {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+.secure-note {
+  margin: 0 0 22px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.secure-form .field { margin-bottom: 18px; }
+.secure-form .field label {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+.secure-form .field input,
+.secure-form .field textarea {
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  width: 100%;
+  resize: vertical;
+  min-height: 180px;
+}
+.secure-form .field input {
+  min-height: 0;
+}
+.secure-form .field input:focus,
+.secure-form .field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(91, 134, 255, 0.18);
+}
+.secure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.secure-actions .btn { min-width: 120px; }
+.secure-form .form__status {
+  margin: 0;
+  text-align: left;
+  color: var(--blue);
+  flex: 1 1 100%;
+}
+.secure-form .form__status--error { color: #c44; }
+.secure-out-label {
+  display: block;
+  margin: 18px 0 8px;
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+.secure-link-out {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  word-break: break-all;
+}
+.secure-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+.secure-foot a { color: var(--blue); font-weight: 600; }
+.theme-toggle--inline {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+@media (max-width: 520px) {
+  .secure-card__body { padding: 22px 18px 24px; }
+  .secure-actions .btn { width: 100%; }
 }

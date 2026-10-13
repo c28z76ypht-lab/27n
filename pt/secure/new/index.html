@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar link seguro | 27n</title>
+  <meta name="description" content="Gera um link de submissão segura para partilhar com clientes 27n." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#05070f" />
+
+  <link rel="canonical" href="https://www.27n.pt/pt/secure/new/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="secure-page">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  <main id="main" class="secure-shell">
+    <a href="/pt/" class="logo secure-logo" aria-label="27n">
+      <span class="logo__mark">27</span><span class="logo__n">n</span>
+    </a>
+
+    <div class="secure-card reveal in">
+      <header class="secure-card__head">
+        <h1>Criar link seguro</h1>
+      </header>
+
+      <div class="secure-card__body">
+        <p class="secure-note">Para a equipa 27n: gera um link único e envia-o ao cliente para colar acessos, passwords ou outros dados sensíveis.</p>
+
+        <form class="secure-form" id="secure-link-form" novalidate>
+          <div class="field field--full">
+            <label for="gen-ticket">Ticket ID</label>
+            <input type="text" id="gen-ticket" name="ticket" inputmode="numeric" placeholder="739107" required autocomplete="off" />
+          </div>
+          <div class="secure-actions">
+            <button type="submit" class="btn btn--primary">Gerar link</button>
+            <button type="button" class="btn btn--outline" id="secure-link-copy" hidden>Copiar link</button>
+          </div>
+          <label class="secure-out-label" for="secure-link-out">Link para o cliente</label>
+          <textarea id="secure-link-out" class="secure-link-out" rows="3" readonly hidden></textarea>
+        </form>
+      </div>
+    </div>
+
+    <p class="secure-foot">
+      <button class="theme-toggle theme-toggle--inline" type="button" id="theme-toggle" aria-label="Mudar tema">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 6.5 6.5 0 0 0 21 14.5z"/></svg>
+      </button>
+      <a href="/pt/secure/submission/">Ver formulário</a>
+      ·
+      <a href="/secure/new/">EN</a>
+    </p>
+  </main>
+
+  <script src="/script.js"></script>
+  <script src="/secure/submission.js"></script>
+</body>
+</html>

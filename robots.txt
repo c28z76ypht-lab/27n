@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /secure/
+Disallow: /pt/secure/
 
 Sitemap: https://www.27n.pt/sitemap.xml
 
