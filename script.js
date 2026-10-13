@@ -59,9 +59,11 @@
 
   /* ---- Header: muda ao fazer scroll ---- */
   var header = document.getElementById("header");
-  var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 12); };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  if (header) {
+    var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 12); };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
   /* ---- Menu mobile ---- */
   var toggle = document.querySelector(".nav-toggle");

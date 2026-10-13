@@ -136,6 +136,7 @@
   var genForm = document.getElementById("secure-link-form");
   if (genForm) {
     var out = document.getElementById("secure-link-out");
+    var result = document.getElementById("secure-link-result");
     var copyBtn = document.getElementById("secure-link-copy");
     var ticketField = document.getElementById("gen-ticket");
 
@@ -168,9 +169,10 @@
       var url = buildUrl(ticket);
       if (out) {
         out.value = url;
-        out.hidden = false;
+        out.focus();
         out.select();
       }
+      if (result) result.hidden = false;
       if (copyBtn) copyBtn.hidden = false;
     });
 
