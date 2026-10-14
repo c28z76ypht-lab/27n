@@ -13,7 +13,9 @@
     { "source": "/agencia-shopify", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/agencia-shopify/", "destination": "/pt/agencia-shopify/", "permanent": true },
     { "source": "/migracao-shopify", "destination": "/pt/migracao-shopify/", "permanent": true },
-    { "source": "/migracao-shopify/", "destination": "/pt/migracao-shopify/", "permanent": true }
+    { "source": "/migracao-shopify/", "destination": "/pt/migracao-shopify/", "permanent": true },
+    { "source": "/equipa", "destination": "/pt/equipa/", "permanent": true },
+    { "source": "/equipa/", "destination": "/pt/equipa/", "permanent": true }
   ],
   "headers": [
     {

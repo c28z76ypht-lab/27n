@@ -727,6 +727,76 @@ a { color: inherit; text-decoration: none; }
 .job__go { flex: none; font-family: var(--font-display); font-weight: 600; color: var(--blue); transition: transform 0.2s; }
 .job:hover .job__go { transform: translateX(3px); }
 
+/* ---------- Team page ---------- */
+.team-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.team-pillar {
+  text-align: center;
+  padding: 8px 12px;
+}
+.team-pillar h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.team-pillar p {
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+  max-width: 32ch;
+  margin: 0 auto;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 22px;
+}
+.team-member {
+  text-align: center;
+  padding: 8px 10px 4px;
+}
+.team-member__avatar {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background:
+    radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,0.28), transparent 55%),
+    linear-gradient(145deg, var(--hero-from), var(--hero-to));
+  box-shadow: 0 14px 28px -18px rgba(31, 79, 240, 0.7);
+}
+.team-member h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.team-member__role {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.team-member__bio {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  max-width: 34ch;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
 /* ---------- Checklist ---------- */
 .checklist { list-style: none; display: grid; gap: 12px; }
 .checklist li { position: relative; padding-left: 30px; color: var(--ink-soft); }
@@ -817,15 +887,15 @@ a { color: inherit; text-decoration: none; }
   .mobile-menu[hidden] { display: none; }
   .theme-toggle:not(.theme-toggle--menu) { display: none; }
   .hero__inner { grid-template-columns: 1fr; gap: 40px; }
-  .cards--3, .steps, .steps--4, .quotes, .services { grid-template-columns: 1fr; }
+  .cards--3, .steps, .steps--4, .quotes, .services, .team-pillars { grid-template-columns: 1fr; }
   .platform-grid { grid-template-columns: repeat(2, 1fr); }
-  .audience, .work-grid { grid-template-columns: repeat(2, 1fr); }
+  .audience, .work-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-grid { grid-template-columns: 1fr; }
   .video-grid, .video-grid--featured { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
   .hero__card-stats { grid-template-columns: 1fr 1fr; }
-  .benefits, .audience { grid-template-columns: 1fr; }
+  .benefits, .audience, .team-grid { grid-template-columns: 1fr; }
   .statband__grid { grid-template-columns: repeat(2, 1fr); gap: 34px 16px; }
   .cta__form { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: 1fr; }
@@ -846,5 +916,5 @@ a { color: inherit; text-decoration: none; }
   .reveal { opacity: 1 !important; transform: none !important; transition: none; }
   .beam { animation: none; }
   .logos__track { animation: none; }
-  .btn:hover, .card:hover, .service:hover { transform: none; }
+  .btn:hover, .card:hover, .service:hover, .job:hover { transform: none; }
 }

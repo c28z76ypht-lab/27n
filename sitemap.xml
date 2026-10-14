@@ -90,6 +90,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.27n.pt/pt/equipa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/equipa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/team/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/equipa/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/team/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/team/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/equipa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/equipa/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://www.27n.pt/pt/careers/</loc>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/careers/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/careers/"/>
