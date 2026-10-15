@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data submission | 27n Secure Links</title>
+  <meta name="description" content="Secure data submission for the 27n team. Use only the link we sent you." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#05070f" />
+  <meta name="referrer" content="no-referrer" />
+
+  <link rel="canonical" href="https://www.27n.pt/secure/submission/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="secure-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main" class="secure-shell">
+    <a href="/en/" class="logo secure-logo" aria-label="27n">
+      <span class="logo__mark">27</span><span class="logo__n">n</span>
+    </a>
+
+    <div class="secure-card reveal in">
+      <header class="secure-card__head">
+        <h1>Data submission</h1>
+      </header>
+
+      <div class="secure-card__body">
+        <p class="secure-ticket" id="secure-ticket">Secure link · 27n</p>
+        <p class="secure-note">Paste access details, passwords or other data 27n asked for. HTTPS only · the team alone receives the submission.</p>
+
+        <form class="secure-form" id="secure-form" action="https://api.web3forms.com/submit" method="POST" novalidate autocomplete="off">
+          <input type="hidden" name="access_key" value="ccd3643b-788f-4d38-b5c9-d80562473732" />
+          <input type="hidden" name="subject" id="secure-subject" value="Secure data submission | 27n" />
+          <input type="hidden" name="from_name" value="27n Secure Links" />
+          <input type="hidden" name="ticket_id" id="ticket-id" value="" />
+          <input type="hidden" name="link_token" id="link-token" value="" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="field field--full">
+            <label for="secure-data">Text field</label>
+            <textarea id="secure-data" name="dados" rows="10" required spellcheck="false" autocomplete="off"></textarea>
+          </div>
+
+          <div class="secure-actions">
+            <button type="submit" class="btn btn--primary">Send</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p class="secure-foot">
+      <button class="theme-toggle theme-toggle--inline" type="button" id="theme-toggle" aria-label="Switch theme">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 6.5 6.5 0 0 0 21 14.5z"/></svg>
+      </button>
+      <a href="/privacy/">Privacy</a>
+      ·
+      <a href="mailto:ola@27n.pt">ola@27n.pt</a>
+    </p>
+  </main>
+
+  <script src="/script.js"></script>
+  <script src="/secure/submission.js"></script>
+</body>
+</html>

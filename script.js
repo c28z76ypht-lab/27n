@@ -59,9 +59,11 @@
 
   /* ---- Header: muda ao fazer scroll ---- */
   var header = document.getElementById("header");
-  var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 12); };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  if (header) {
+    var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 12); };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
   /* ---- Menu mobile ---- */
   var toggle = document.querySelector(".nav-toggle");
@@ -277,6 +279,7 @@
 
   /* ---- Widget flutuante de contacto (WhatsApp → 27N team) ---- */
   (function () {
+    if (document.body.classList.contains("secure-page")) return;
     var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
     var label = isEN ? "Chat with 27N team on WhatsApp" : "Fala com a 27N team no WhatsApp";
     var msg = encodeURIComponent(isEN

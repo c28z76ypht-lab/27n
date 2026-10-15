@@ -1,5 +1,9 @@
 {
   "trailingSlash": true,
+  "rewrites": [
+    { "source": "/secure/submission/:token", "destination": "/secure/submission/" },
+    { "source": "/pt/secure/submission/:token", "destination": "/pt/secure/submission/" }
+  ],
   "redirects": [
     { "source": "/", "destination": "/pt/", "permanent": true },
     { "source": "/index.html", "destination": "/en/", "permanent": true },
@@ -44,6 +48,22 @@
       "source": "/(favicon.ico|favicon.svg|robots.txt|sitemap.xml|site.webmanifest)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400" }
+      ]
+    },
+    {
+      "source": "/secure/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    },
+    {
+      "source": "/pt/secure/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
     }
   ]
