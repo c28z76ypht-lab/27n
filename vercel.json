@@ -15,7 +15,15 @@
     { "source": "/migracao-shopify", "destination": "/pt/migracao-shopify/", "permanent": true },
     { "source": "/migracao-shopify/", "destination": "/pt/migracao-shopify/", "permanent": true },
     { "source": "/equipa", "destination": "/pt/equipa/", "permanent": true },
-    { "source": "/equipa/", "destination": "/pt/equipa/", "permanent": true }
+    { "source": "/equipa/", "destination": "/pt/equipa/", "permanent": true },
+    { "source": "/agencia-shopify-lisboa", "destination": "/pt/agencia-shopify-lisboa/", "permanent": true },
+    { "source": "/agencia-shopify-lisboa/", "destination": "/pt/agencia-shopify-lisboa/", "permanent": true },
+    { "source": "/agencia-shopify-porto", "destination": "/pt/agencia-shopify-porto/", "permanent": true },
+    { "source": "/agencia-shopify-porto/", "destination": "/pt/agencia-shopify-porto/", "permanent": true },
+    { "source": "/quanto-custa-loja-shopify", "destination": "/pt/quanto-custa-loja-shopify/", "permanent": true },
+    { "source": "/quanto-custa-loja-shopify/", "destination": "/pt/quanto-custa-loja-shopify/", "permanent": true },
+    { "source": "/migracao-shopify/woocommerce", "destination": "/pt/migracao-shopify/woocommerce/", "permanent": true },
+    { "source": "/migracao-shopify/woocommerce/", "destination": "/pt/migracao-shopify/woocommerce/", "permanent": true }
   ],
   "headers": [
     {

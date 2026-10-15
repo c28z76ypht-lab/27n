@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Migrar WooCommerce para Shopify Portugal | 27n</title>
+  <meta name="description" content="Migrar WooCommerce para Shopify em Portugal sem perder SEO. Catálogo, clientes, redirects 301 e cutover controlado pela Select Partner 27n." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#05070f" />
+  <link rel="canonical" href="https://www.27n.pt/pt/migracao-shopify/woocommerce/" />
+  <link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/woocommerce/" />
+  <link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/woocommerce/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/woocommerce/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="27n" />
+  <meta property="og:url" content="https://www.27n.pt/pt/migracao-shopify/woocommerce/" />
+  <meta property="og:title" content="Migrar WooCommerce para Shopify | 27n" />
+  <meta property="og:description" content="Replatform WooCommerce → Shopify com SEO intacto. Select Partner desde 2021." />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:image" content="https://www.27n.pt/assets/seo/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Migrar WooCommerce para Shopify | 27n" />
+  <meta name="twitter:description" content="Catálogo, clientes, 301s e go-live sem downtime." />
+  <meta name="twitter:image" content="https://www.27n.pt/assets/seo/og.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/seo/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="/theme-init.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.27n.pt/pt/" },
+          { "@type": "ListItem", "position": 2, "name": "Migração Shopify", "item": "https://www.27n.pt/pt/migracao-shopify/" },
+          { "@type": "ListItem", "position": 3, "name": "WooCommerce", "item": "https://www.27n.pt/pt/migracao-shopify/woocommerce/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Migração WooCommerce para Shopify",
+        "provider": { "@id": "https://www.27n.pt/#organization" },
+        "areaServed": "PT",
+        "url": "https://www.27n.pt/pt/migracao-shopify/woocommerce/",
+        "description": "Migração de WooCommerce para Shopify com preservação de SEO, catálogo, clientes e histórico."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como migrar de WooCommerce para Shopify sem perder SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mapeamos cada URL WooCommerce para o equivalente Shopify, aplicamos redirects 301, preservamos metas relevantes e validamos no Search Console após o go-live."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que migram do WooCommerce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Produtos, variantes, clientes, histórico de encomendas quando possível, conteúdos essenciais e regras de negócio mapeáveis para Shopify ou apps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo demora uma migração WooCommerce para Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do tamanho do catálogo e das integrações. Depois da descoberta enviamos timeline e preço fechado em 48–72h."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="has-hero">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="/pt/" class="logo" aria-label="27n início"><span class="logo__mark">27</span><span class="logo__n">n</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/pt/migracao-shopify/">Migração</a>
+        <a href="/pt/migracao-shopify/woocommerce/" aria-current="page">WooCommerce</a>
+        <a href="/pt/shopify-vs-woocommerce/">vs Woo</a>
+        <a href="/pt/contact/">Contacto</a>
+      </nav>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Mudar tema">
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 6.5 6.5 0 0 0 21 14.5z"/></svg>
+      </button>
+      <div class="lang nav__lang" role="group" aria-label="Idioma">
+        <a href="/shopify-migration/woocommerce/" hreflang="en">EN</a>
+        <a href="/pt/migracao-shopify/woocommerce/" class="is-active" aria-current="true" hreflang="pt-PT">PT</a>
+      </div>
+      <a href="/pt/contact/" class="btn btn--white btn--sm nav__cta">Pedir migração</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="/pt/migracao-shopify/">Migração Shopify</a>
+      <a href="/pt/migracao-shopify/woocommerce/">WooCommerce</a>
+      <a href="/pt/contact/" class="btn btn--white">Contacto</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__beams" aria-hidden="true"><span class="beam beam--1"></span><span class="beam beam--2"></span></div>
+      <div class="container page-hero__inner reveal">
+        <nav class="seo-crumbs" aria-label="Breadcrumb">
+          <a href="/pt/">Início</a> / <a href="/pt/migracao-shopify/">Migração Shopify</a> / <span>WooCommerce</span>
+        </nav>
+        <p class="eyebrow"><span class="dot"></span> WooCommerce → Shopify</p>
+        <h1>Migrar WooCommerce para Shopify sem perder SEO nem vendas</h1>
+        <p class="page-hero__lead">Replatform completo: produtos, clientes, redirects 301 e cutover controlado. Somos <a href="/pt/shopify-partner-portugal/">Shopify Select Partner</a> em Portugal e fazemos migrações WooCommerce todos os anos.</p>
+        <div class="page-hero__meta">
+          <a class="btn btn--white" href="/pt/contact/">Pedir migração</a>
+          <a class="btn btn--glass" href="/pt/shopify-vs-woocommerce/">Shopify vs WooCommerce</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">O que migramos</p>
+          <h2 class="section__title">Do catálogo WooCommerce à loja Shopify pronta a vender.</h2>
+        </header>
+        <div class="cards cards--3">
+          <article class="card reveal"><h3>Catálogo &amp; variantes</h3><p>Produtos, imagens, coleções, inventário e opções mapeadas para Shopify.</p></article>
+          <article class="card reveal"><h3>Clientes &amp; histórico</h3><p>Contas e encomendas quando a exportação WooCommerce o permite, sem partir a operação.</p></article>
+          <article class="card reveal"><h3>SEO URL a URL</h3><p>Redirects 301, metas e validação Search Console. O tráfego orgânico não é negociável.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Processo</p>
+          <h2 class="section__title">Migração WooCommerce em quatro fases.</h2>
+        </header>
+        <div class="steps steps--4">
+          <article class="step reveal"><span class="step__num">01</span><h3>Auditoria</h3><p>Plugins, permalinks, SEO atual e integrações (ERP, email, pagamentos PT).</p></article>
+          <article class="step reveal"><span class="step__num">02</span><h3>Mapeamento</h3><p>URLs, dados e gaps. Plano de cutover com janela definida.</p></article>
+          <article class="step reveal"><span class="step__num">03</span><h3>Build Shopify</h3><p>Tema, apps essenciais e importações em ambiente de staging.</p></article>
+          <article class="step reveal"><span class="step__num">04</span><h3>Go-live</h3><p>DNS, 301s, testes de checkout e monitorização pós-lançamento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__kicker">FAQ</p>
+          <h2 class="section__title">Migrar WooCommerce para Shopify: FAQ</h2>
+        </header>
+        <div class="faq">
+          <details class="faq__item reveal" open>
+            <summary>Como migrar de WooCommerce para Shopify sem perder SEO?</summary>
+            <p>Mapeamos cada URL, aplicamos redirects 301, preservamos metas relevantes e validamos no Search Console após o go-live.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>O que migram do WooCommerce?</summary>
+            <p>Produtos, variantes, clientes, histórico quando possível, conteúdos essenciais e regras mapeáveis para Shopify ou apps.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Quanto tempo demora?</summary>
+            <p>Depende do catálogo e das integrações. Depois da descoberta enviamos timeline e preço fechado em 48–72h. Vê também <a href="/pt/quanto-custa-loja-shopify/">quanto custa</a> e a <a href="/pt/migracao-shopify/">página geral de migração</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Pronto para sair do WooCommerce?</h2>
+        <p>Conta-nos o tamanho do catálogo e os plugins críticos. Desenhamos a migração.</p>
+        <p style="margin-top:28px"><a class="btn btn--white btn--lg" href="/pt/contact/">Pedir migração</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/pt/" class="logo logo--footer"><span class="logo__mark">27</span><span class="logo__n">n</span></a>
+        <p>Agência Shopify Select Partner. Portugal.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="/pt/migracao-shopify/">Migração Shopify</a>
+        <a href="/pt/migracao-shopify/woocommerce/">WooCommerce</a>
+        <a href="/pt/shopify-vs-woocommerce/">Shopify vs Woo</a>
+        <a href="/pt/agencia-shopify/">Agência</a>
+        <a href="/pt/contact/">Contacto</a>
+      </nav>
+      <p class="footer__meta">© <span id="year">2026</span> 27n</p>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
