@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 42" role="img" aria-label="27n">
+  <title>27n</title>
+  <text x="2" y="32"
+        font-family="Space Grotesk, Inter, system-ui, sans-serif"
+        font-weight="700"
+        font-size="32"
+        letter-spacing="-1.28">
+    <tspan fill="#0c1222">27</tspan><tspan fill="#3a6bff">n</tspan>
+  </text>
+</svg>
