@@ -12,12 +12,12 @@
   </url>
   <url>
     <loc>https://www.27n.pt/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/shopify-partner-portugal/</loc>
@@ -30,12 +30,12 @@
   </url>
   <url>
     <loc>https://www.27n.pt/en/shopify-partner-portugal/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-partner-portugal/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/shopify-partner-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-partner-portugal/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/shopify-partner-portugal/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/agencia-shopify/</loc>
@@ -48,8 +48,8 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-agency/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-agency/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agencia-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-agency/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agencia-shopify/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,20 +66,30 @@
   </url>
   <url>
     <loc>https://www.27n.pt/en/shopify-agency-lisbon/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-agency-lisbon/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agencia-shopify-lisboa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-agency-lisbon/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agencia-shopify-lisboa/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/agencia-shopify-porto/</loc>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agencia-shopify-porto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-agency-porto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agencia-shopify-porto/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/shopify-agency-porto/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agencia-shopify-porto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-agency-porto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agencia-shopify-porto/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/migracao-shopify/</loc>
@@ -92,12 +102,12 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-migration/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/migracao-shopify/woocommerce/</loc>
@@ -110,12 +120,48 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-migration/woocommerce/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/woocommerce/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/woocommerce/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/woocommerce/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/woocommerce/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/migracao-shopify/magento/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/magento/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/magento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/magento/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/shopify-migration/magento/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/magento/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/magento/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/magento/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/migracao-shopify/prestashop/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/prestashop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/prestashop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/prestashop/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/shopify-migration/prestashop/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/migracao-shopify/prestashop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-migration/prestashop/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/migracao-shopify/prestashop/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/shopify-plus/</loc>
@@ -128,12 +174,48 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-plus/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-plus/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/shopify-plus/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-plus/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/shopify-plus/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/hydrogen-shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/hydrogen-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-hydrogen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/hydrogen-shopify/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/shopify-hydrogen/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/hydrogen-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-hydrogen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/hydrogen-shopify/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/suporte-shopify/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/suporte-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/suporte-shopify/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/shopify-support/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/suporte-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/shopify-support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/suporte-shopify/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/quanto-custa-loja-shopify/</loc>
@@ -146,12 +228,12 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-cost/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-cost/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/quanto-custa-loja-shopify/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-cost/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/quanto-custa-loja-shopify/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/shopify-vs-woocommerce/</loc>
@@ -164,12 +246,246 @@
   </url>
   <url>
     <loc>https://www.27n.pt/shopify-vs-woocommerce/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-vs-woocommerce/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/shopify-vs-woocommerce/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/shopify-vs-woocommerce/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/shopify-vs-woocommerce/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/processo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/processo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/process/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/processo/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/process/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/processo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/process/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/processo/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/perguntas-frequentes/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/perguntas-frequentes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/perguntas-frequentes/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/perguntas-frequentes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/perguntas-frequentes/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/trabalhos/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/work/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/trabalhos/dime-beauty/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/dime-beauty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/dime-beauty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/dime-beauty/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/work/dime-beauty/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/dime-beauty/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/dime-beauty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/dime-beauty/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/trabalhos/skout-organic/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/skout-organic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/skout-organic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/skout-organic/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/work/skout-organic/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/skout-organic/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/skout-organic/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/skout-organic/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/trabalhos/cubby-beds/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/cubby-beds/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/cubby-beds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/cubby-beds/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/work/cubby-beds/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/cubby-beds/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/cubby-beds/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/cubby-beds/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/trabalhos/titan-casket/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/titan-casket/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/titan-casket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/titan-casket/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/work/titan-casket/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/trabalhos/titan-casket/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/work/titan-casket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/trabalhos/titan-casket/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/escolher-shopify-partner-portugal/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/escolher-shopify-partner-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/choose-shopify-partner-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/escolher-shopify-partner-portugal/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/choose-shopify-partner-portugal/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/escolher-shopify-partner-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/choose-shopify-partner-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/escolher-shopify-partner-portugal/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/migrar-para-shopify-sem-perder-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/migrar-para-shopify-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/migrate-to-shopify-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/migrar-para-shopify-sem-perder-seo/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/migrate-to-shopify-without-losing-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/migrar-para-shopify-sem-perder-seo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/migrate-to-shopify-without-losing-seo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/migrar-para-shopify-sem-perder-seo/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/shopify-plus-quando-faz-sentido/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/shopify-plus-quando-faz-sentido/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/shopify-plus-when-it-makes-sense/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/shopify-plus-quando-faz-sentido/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/shopify-plus-when-it-makes-sense/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/shopify-plus-quando-faz-sentido/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/shopify-plus-when-it-makes-sense/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/shopify-plus-quando-faz-sentido/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/shopify-vs-woocommerce-portugal/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/shopify-vs-woocommerce-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/shopify-vs-woocommerce-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/shopify-vs-woocommerce-portugal/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/shopify-vs-woocommerce-portugal/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/shopify-vs-woocommerce-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/shopify-vs-woocommerce-portugal/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/shopify-vs-woocommerce-portugal/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/recursos/hydrogen-ou-online-store/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/hydrogen-ou-online-store/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/hydrogen-or-online-store/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/hydrogen-ou-online-store/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/resources/hydrogen-or-online-store/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/recursos/hydrogen-ou-online-store/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/resources/hydrogen-or-online-store/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/recursos/hydrogen-ou-online-store/"/>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/contact/</loc>
@@ -182,12 +498,12 @@
   </url>
   <url>
     <loc>https://www.27n.pt/contact/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/contact/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/contact/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/equipa/</loc>
@@ -200,8 +516,8 @@
   </url>
   <url>
     <loc>https://www.27n.pt/team/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/team/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/equipa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/team/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/equipa/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -211,28 +527,36 @@
     <loc>https://www.27n.pt/pt/careers/</loc>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/careers/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/careers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/careers/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/careers/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/careers/"/>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/careers/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/careers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/careers/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.30</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/pt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/privacy/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://www.27n.pt/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/privacy/"/>
     <lastmod>2026-10-15</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.20</priority>
   </url>
 </urlset>
