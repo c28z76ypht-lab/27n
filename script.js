@@ -85,6 +85,25 @@
     });
   }
 
+  var appSearch = document.getElementById("app-search");
+  if (appSearch) {
+    appSearch.addEventListener("input", function () {
+      var q = appSearch.value.trim().toLowerCase();
+      document.querySelectorAll(".app-group").forEach(function (group) {
+        var visible = 0;
+        group.querySelectorAll(".app").forEach(function (card) {
+          var show = !q || card.textContent.toLowerCase().indexOf(q) !== -1;
+          card.hidden = !show;
+          if (show) {
+            visible += 1;
+            card.classList.add("in");
+          }
+        });
+        group.hidden = visible === 0;
+      });
+    });
+  }
+
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---- Scroll reveal ---- */
