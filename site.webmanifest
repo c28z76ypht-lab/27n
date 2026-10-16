@@ -4,8 +4,8 @@
   "description": "Empresa de software em Seia, Évora e Lisboa. Lojas, ERP, faturação e preservação digital.",
   "start_url": "/pt/",
   "display": "standalone",
-  "background_color": "#05070f",
-  "theme_color": "#05070f",
+  "background_color": "#111111",
+  "theme_color": "#111111",
   "lang": "pt-PT",
   "icons": [
     {
