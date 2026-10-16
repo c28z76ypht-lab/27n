@@ -361,19 +361,22 @@ def patch_existing(group) -> None:
 
 
 def extra_sitemap_urls() -> list[str]:
-    de = "/de/shopify-partner-deutschland/"
-    en = "/en/shopify-partner-germany/"
+    pairs = [
+        ("/de/shopify-partner-deutschland/", "/en/shopify-partner-germany/", "de", "0.95", "0.85"),
+        ("/fr/shopify-partner-france/", "/en/shopify-partner-france/", "fr", "0.95", "0.85"),
+    ]
     block = []
-    for loc, priority in ((de, "0.95"), (en, "0.85")):
-        block.append("  <url>")
-        block.append(f"    <loc>{SITE}{loc}</loc>")
-        block.append(f'    <xhtml:link rel="alternate" hreflang="de" href="{SITE}{de}"/>')
-        block.append(f'    <xhtml:link rel="alternate" hreflang="en" href="{SITE}{en}"/>')
-        block.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{en}"/>')
-        block.append("    <lastmod>2026-10-16</lastmod>")
-        block.append("    <changefreq>weekly</changefreq>")
-        block.append(f"    <priority>{priority}</priority>")
-        block.append("  </url>")
+    for local, en, hl, local_priority, en_priority in pairs:
+        for loc, priority in ((local, local_priority), (en, en_priority)):
+            block.append("  <url>")
+            block.append(f"    <loc>{SITE}{loc}</loc>")
+            block.append(f'    <xhtml:link rel="alternate" hreflang="{hl}" href="{SITE}{local}"/>')
+            block.append(f'    <xhtml:link rel="alternate" hreflang="en" href="{SITE}{en}"/>')
+            block.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{en}"/>')
+            block.append("    <lastmod>2026-10-16</lastmod>")
+            block.append("    <changefreq>weekly</changefreq>")
+            block.append(f"    <priority>{priority}</priority>")
+            block.append("  </url>")
     return block
 
 
