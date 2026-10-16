@@ -17,10 +17,16 @@
     };
 
     var labels = function (theme) {
-      var isEN = (root.lang || "en").slice(0, 2) === "en";
-      return theme === "dark"
-        ? (isEN ? "Switch to light mode" : "Mudar para modo claro")
-        : (isEN ? "Switch to dark mode" : "Mudar para modo escuro");
+      var lang = (root.lang || "pt").slice(0, 2);
+      var copy = {
+        en: ["Switch to light mode", "Switch to dark mode"],
+        pt: ["Mudar para modo claro", "Mudar para modo escuro"],
+        de: ["Zum hellen Modus wechseln", "Zum dunklen Modus wechseln"],
+        fr: ["Passer au mode clair", "Passer au mode sombre"],
+        es: ["Cambiar a modo claro", "Cambiar a modo oscuro"]
+      };
+      var pair = copy[lang] || copy.pt;
+      return theme === "dark" ? pair[0] : pair[1];
     };
 
     var syncToggle = function (theme) {
@@ -153,18 +159,35 @@
   var status = document.getElementById("form-status");
   if (form) {
     var submitBtn = form.querySelector('button[type="submit"]');
-    var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
-    var t = {
-      sending: isEN ? "Sending…" : "A enviar…",
-      ok: function (nome) {
-        return isEN
-          ? "Thanks, " + (nome || "") + "! We got your request and will reply within 24h."
-          : "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h.";
+    var lang = (document.documentElement.lang || "pt").slice(0, 2);
+    var copy = {
+      en: {
+        sending: "Sending…",
+        ok: function (nome) { return "Thanks, " + (nome || "") + "! We got your request and will reply within 24h."; },
+        err: "Something went wrong. Please try again or email ola@27n.pt."
       },
-      err: isEN
-        ? "Something went wrong. Please try again or email ola@27n.pt."
-        : "Algo correu mal. Tenta novamente ou escreve para ola@27n.pt."
+      pt: {
+        sending: "A enviar…",
+        ok: function (nome) { return "Obrigado, " + (nome || "") + "! Recebemos o teu pedido e respondemos em 24h."; },
+        err: "Algo correu mal. Tenta novamente ou escreve para ola@27n.pt."
+      },
+      de: {
+        sending: "Wird gesendet…",
+        ok: function (nome) { return "Danke, " + (nome || "") + "! Wir haben deine Anfrage erhalten und antworten innerhalb von 24 Stunden."; },
+        err: "Etwas ist schiefgelaufen. Versuch es erneut oder schreib an ola@27n.pt."
+      },
+      fr: {
+        sending: "Envoi…",
+        ok: function (nome) { return "Merci, " + (nome || "") + " ! Nous avons bien reçu votre demande et répondons sous 24 h."; },
+        err: "Une erreur s'est produite. Réessayez ou écrivez à ola@27n.pt."
+      },
+      es: {
+        sending: "Enviando…",
+        ok: function (nome) { return "Gracias, " + (nome || "") + ". Recibimos tu solicitud y respondemos en 24 h."; },
+        err: "Algo salió mal. Inténtalo de nuevo o escribe a ola@27n.pt."
+      }
     };
+    var t = copy[lang] || copy.pt;
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -277,11 +300,17 @@
 
   /* ---- Widget flutuante de contacto (WhatsApp → 27N team) ---- */
   (function () {
-    var isEN = (document.documentElement.lang || "pt").slice(0, 2) === "en";
-    var label = isEN ? "Chat with 27N team on WhatsApp" : "Fala com a 27N team no WhatsApp";
-    var msg = encodeURIComponent(isEN
-      ? "Hi! I came from the 27n website and I'd like to talk about a project."
-      : "Olá! Vim do site da 27n e gostava de falar sobre um projeto.");
+    var lang = (document.documentElement.lang || "pt").slice(0, 2);
+    var waCopy = {
+      en: ["Chat with 27N team on WhatsApp", "Hi! I came from the 27n website and I'd like to talk about a project."],
+      pt: ["Fala com a 27N team no WhatsApp", "Olá! Vim do site da 27n e gostava de falar sobre um projeto."],
+      de: ["Mit dem 27N-Team auf WhatsApp chatten", "Hallo! Ich komme von der 27n-Website und möchte über ein Projekt sprechen."],
+      fr: ["Discuter avec l'équipe 27N sur WhatsApp", "Bonjour ! Je viens du site 27n et j'aimerais parler d'un projet."],
+      es: ["Hablar con el equipo 27N por WhatsApp", "Hola. Vengo de la web de 27n y me gustaría hablar de un proyecto."]
+    };
+    var pair = waCopy[lang] || waCopy.pt;
+    var label = pair[0];
+    var msg = encodeURIComponent(pair[1]);
     var waHref = "https://wa.me/351911579030?text=" + msg;
     var waIcon = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
       '<path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z" />' +
