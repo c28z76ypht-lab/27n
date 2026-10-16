@@ -86,7 +86,7 @@
   }
 
   var fold = function (s) {
-    return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "");
   };
 
   var platformSearch = document.getElementById("platform-search");
