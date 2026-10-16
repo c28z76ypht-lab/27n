@@ -2017,4 +2017,124 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.27n.pt/pt/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/medusa/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/medusa/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/de/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/medusa/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/fr/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/medusa/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/es/medusa/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/medusa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/medusa/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/astro/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/astro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/astro/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/astro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/astro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/astro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/astro/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/astro/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/astro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/astro/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/astro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/astro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/astro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/astro/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/de/astro/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/astro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/astro/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/astro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/astro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/astro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/astro/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/fr/astro/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/astro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/astro/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/astro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/astro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/astro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/astro/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/es/astro/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/astro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/astro/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/astro/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/astro/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/astro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/astro/"/>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
