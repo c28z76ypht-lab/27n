@@ -360,6 +360,23 @@ def patch_existing(group) -> None:
         path.write_text(html, encoding="utf-8")
 
 
+def extra_sitemap_urls() -> list[str]:
+    de = "/de/shopify-partner-deutschland/"
+    en = "/en/shopify-partner-germany/"
+    block = []
+    for loc, priority in ((de, "0.95"), (en, "0.85")):
+        block.append("  <url>")
+        block.append(f"    <loc>{SITE}{loc}</loc>")
+        block.append(f'    <xhtml:link rel="alternate" hreflang="de" href="{SITE}{de}"/>')
+        block.append(f'    <xhtml:link rel="alternate" hreflang="en" href="{SITE}{en}"/>')
+        block.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{en}"/>')
+        block.append("    <lastmod>2026-10-16</lastmod>")
+        block.append("    <changefreq>weekly</changefreq>")
+        block.append(f"    <priority>{priority}</priority>")
+        block.append("  </url>")
+    return block
+
+
 def build_sitemap() -> None:
     # Keep priorities simple: pt 1.0 home else 0.8, others slightly lower
     lines = [
@@ -383,6 +400,7 @@ def build_sitemap() -> None:
             lines.append("    <changefreq>weekly</changefreq>")
             lines.append(f"    <priority>{priority}</priority>")
             lines.append("  </url>")
+    lines.extend(extra_sitemap_urls())
     lines.append("</urlset>")
     lines.append("")
     (ROOT / "sitemap.xml").write_text("\n".join(lines), encoding="utf-8")
