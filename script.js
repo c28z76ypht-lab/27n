@@ -85,6 +85,19 @@
     });
   }
 
+  var platformSearch = document.getElementById("platform-search");
+  if (platformSearch) {
+    var fold = function (s) {
+      return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    };
+    platformSearch.addEventListener("input", function () {
+      var q = fold(platformSearch.value.trim());
+      document.querySelectorAll(".platform-grid li").forEach(function (item) {
+        item.hidden = !!q && fold(item.textContent).indexOf(q) === -1;
+      });
+    });
+  }
+
   var appSearch = document.getElementById("app-search");
   if (appSearch) {
     appSearch.addEventListener("input", function () {
