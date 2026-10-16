@@ -581,55 +581,82 @@ a.service { color: inherit; text-decoration: none; display: flex; flex-direction
 
 /* ---------- Floating contact widget ---------- */
 .fab-contact {
+  --fab-orange: #ff7a18;
+  --fab-navy: #121826;
   position: fixed; right: 22px; bottom: 22px; z-index: 300;
-  display: flex; flex-direction: column; align-items: flex-end; gap: 12px;
-  font-family: var(--font-display); font-weight: 600;
-}
-.fab-launch { display: flex; align-items: center; gap: 10px; }
-.fab-contact.is-open .fab-launch { display: none; }
-
-.fab-bubble {
-  background: #fff; color: #0b1020; padding: 10px 16px; border-radius: 14px;
-  box-shadow: 0 10px 26px -12px rgba(0,0,0,0.55); font-size: 0.95rem; white-space: nowrap;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 14px;
+  font-family: var(--font-body);
 }
 .fab-trigger {
-  position: relative; display: inline-flex; align-items: center; justify-content: center;
-  width: 64px; height: 64px; padding: 0;
-  background: radial-gradient(circle at 32% 28%, #5ea6f5, #0a55cf 78%); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 68px; height: 68px; padding: 0;
+  background: var(--fab-orange); color: #141414;
   border: 0; border-radius: 50%; cursor: pointer;
-  box-shadow: 0 16px 36px -10px rgba(20,83,230,0.7), 0 0 0 7px rgba(20,83,230,0.12);
-  transition: transform 0.2s var(--ease), box-shadow 0.2s;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s var(--ease), background 0.2s, color 0.2s;
 }
-.fab-trigger svg { width: 30px; height: 30px; }
-.fab-trigger:hover { transform: translateY(-2px); box-shadow: 0 22px 44px -12px rgba(20,83,230,0.8), 0 0 0 9px rgba(20,83,230,0.16); }
-.fab-badge {
-  position: absolute; top: -7px; left: -7px; width: 22px; height: 22px; border-radius: 50%;
-  background: #ff3b30; color: #fff; display: grid; place-items: center; font-size: 0.78rem;
-  box-shadow: 0 0 0 2px #fff;
+.fab-trigger svg { width: 34px; height: 34px; }
+.fab-icon-x { display: none; width: 26px; height: 26px; }
+.fab-trigger:hover { transform: translateY(-2px); }
+.fab-contact.is-open .fab-trigger {
+  background: var(--fab-navy); color: #fff;
 }
+.fab-contact.is-open .fab-icon-wa { display: none; }
+.fab-contact.is-open .fab-icon-x { display: block; }
 
-.fab-panel { display: none; flex-direction: column; gap: 10px; align-items: stretch; min-width: 230px; }
-.fab-contact.is-open .fab-panel { display: flex; animation: fabUp 0.28s var(--ease); }
-.fab-panel-title { color: var(--ink-soft); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.1em; text-align: right; padding-right: 6px; margin-bottom: 2px; }
-
-.fab-wa {
-  display: flex; align-items: center; justify-content: space-between; gap: 14px;
-  background: linear-gradient(90deg, #4caf50, #8bc34a); color: #fff;
-  padding: 13px 20px; border-radius: 999px; box-shadow: 0 12px 28px -14px rgba(0,0,0,0.45);
-  transition: transform 0.2s var(--ease), filter 0.2s;
+.fab-panel {
+  width: min(360px, calc(100vw - 32px));
+  background: #f2f3f5; color: #2a3140;
+  border-radius: 18px; overflow: hidden;
+  box-shadow: 0 22px 50px -18px rgba(12, 18, 34, 0.45);
 }
-.fab-wa:hover { transform: translateY(-2px); filter: brightness(1.05); }
-.fab-wa svg { width: 21px; height: 21px; flex: none; }
-.fab-wa-name { font-weight: 600; }
-
-.fab-close {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  background: var(--fab-close-bg); color: var(--fab-close-text); border: 0; border-radius: 999px; padding: 13px 20px;
-  font-family: inherit; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: background 0.2s;
+.fab-panel[hidden] { display: none; }
+.fab-contact.is-open .fab-panel { display: block; animation: fabUp 0.28s var(--ease); }
+.fab-panel__head {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--fab-navy); color: #fff; padding: 16px 18px;
 }
-.fab-close:hover { background: var(--fab-close-hover); }
+.fab-brand {
+  font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.04em; color: #fff;
+}
+.fab-brand span { color: var(--fab-orange); }
+.fab-x {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: #fff; cursor: pointer;
+}
+.fab-x svg { width: 18px; height: 18px; }
+.fab-x:hover { background: rgba(255, 255, 255, 0.08); }
+.fab-panel__body { display: grid; gap: 16px; padding: 18px; }
+.fab-card {
+  background: #e6e8ec; border-radius: 14px; padding: 22px 20px;
+}
+.fab-card h2 {
+  font-family: var(--font-display); font-size: 1.45rem; font-weight: 700;
+  color: #2a3140; margin: 0 0 8px;
+}
+.fab-card p { margin: 0; color: #3c4454; font-size: 1rem; line-height: 1.45; }
+.fab-go {
+  display: block; text-align: center; text-decoration: none;
+  background: var(--fab-orange); color: #2a241c;
+  border-radius: 999px; padding: 16px 18px;
+  font-family: var(--font-display); font-weight: 700; font-size: 0.92rem;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.fab-go:hover { filter: brightness(1.05); }
+.fab-later {
+  justify-self: center; background: none; border: 0; padding: 0 4px 4px;
+  color: #2a3140; cursor: pointer;
+  font-family: var(--font-display); font-weight: 600; font-size: 0.82rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.fab-later:hover { color: #111; }
 
 @keyframes fabUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .fab-contact.is-open .fab-panel { animation: none; }
+}
 
 /* ---------- Cookie banner ---------- */
 .cookie {

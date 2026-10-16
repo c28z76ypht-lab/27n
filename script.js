@@ -317,31 +317,121 @@
     });
   })();
 
-  /* ---- Widget flutuante de contacto (WhatsApp → 27N team) ---- */
+  /* ---- Widget flutuante de contacto (WhatsApp → 27n) ---- */
   (function () {
     var lang = (document.documentElement.lang || "pt").slice(0, 2);
     var waCopy = {
-      en: ["Chat with 27N team on WhatsApp", "Hi! I came from the 27n website and I'd like to talk about a project."],
-      pt: ["Fala com a 27N team no WhatsApp", "Olá! Vim do site da 27n e gostava de falar sobre um projeto."],
-      de: ["Mit dem 27N-Team auf WhatsApp chatten", "Hallo! Ich komme von der 27n-Website und möchte über ein Projekt sprechen."],
-      fr: ["Discuter avec l'équipe 27N sur WhatsApp", "Bonjour ! Je viens du site 27n et j'aimerais parler d'un projet."],
-      es: ["Hablar con el equipo 27N por WhatsApp", "Hola. Vengo de la web de 27n y me gustaría hablar de un proyecto."]
+      pt: {
+        title: "Vamos conversar?",
+        body: "Ao continuar, irá abrir uma conversa com a equipa 27n.",
+        go: "Continuar no WhatsApp",
+        later: "Agora não",
+        open: "Abrir conversa no WhatsApp",
+        close: "Fechar"
+      },
+      en: {
+        title: "Shall we talk?",
+        body: "Continuing opens a conversation with the 27n team.",
+        go: "Continue on WhatsApp",
+        later: "Not now",
+        open: "Open a WhatsApp conversation",
+        close: "Close"
+      },
+      de: {
+        title: "Wollen wir sprechen?",
+        body: "Weiter öffnet ein Gespräch mit dem 27n-Team.",
+        go: "Weiter auf WhatsApp",
+        later: "Jetzt nicht",
+        open: "WhatsApp-Gespräch öffnen",
+        close: "Schließen"
+      },
+      fr: {
+        title: "On en parle ?",
+        body: "En continuant, une conversation s'ouvre avec l'équipe 27n.",
+        go: "Continuer sur WhatsApp",
+        later: "Pas maintenant",
+        open: "Ouvrir une conversation WhatsApp",
+        close: "Fermer"
+      },
+      es: {
+        title: "¿Hablamos?",
+        body: "Al continuar, se abrirá una conversación con el equipo 27n.",
+        go: "Continuar en WhatsApp",
+        later: "Ahora no",
+        open: "Abrir una conversación de WhatsApp",
+        close: "Cerrar"
+      }
     };
-    var pair = waCopy[lang] || waCopy.pt;
-    var label = pair[0];
-    var msg = encodeURIComponent(pair[1]);
-    var waHref = "https://wa.me/351911579030?text=" + msg;
-    var waIcon = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
-      '<path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z" />' +
-      '<path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z" /></svg>';
+    var messages = {
+      pt: "Olá! Vim do site da 27n e gostava de falar sobre um projeto.",
+      en: "Hi! I came from the 27n website and I'd like to talk about a project.",
+      de: "Hallo! Ich komme von der 27n-Website und möchte über ein Projekt sprechen.",
+      fr: "Bonjour ! Je viens du site 27n et j'aimerais parler d'un projet.",
+      es: "Hola. Vengo de la web de 27n y me gustaría hablar de un proyecto."
+    };
+    var copy = waCopy[lang] || waCopy.pt;
+    var waHref = "https://wa.me/351911579030?text=" + encodeURIComponent(messages[lang] || messages.pt);
+    var waIcon = '<svg class="fab-icon-wa" viewBox="0 0 24 24" aria-hidden="true">' +
+      '<path fill="currentColor" d="M12 2.2A9.8 9.8 0 0 0 3.5 16.7L2.2 21.8l5.2-1.3A9.8 9.8 0 1 0 12 2.2zm0 17.8c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.8-.3-1.6-.8-2.2-1.6-.5-.6-.9-1.3-1-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.1.1-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.1 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.5-.3z"/>' +
+      '</svg>';
+    var xIcon = '<svg class="fab-icon-x" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>';
 
     var el = document.createElement("div");
     el.className = "fab-contact";
     el.innerHTML =
-      '<div class="fab-launch">' +
-        '<a class="fab-trigger" href="' + waHref + '" target="_blank" rel="noopener" aria-label="' + label + '" title="' + label + '">' +
-          waIcon + '<span class="fab-badge">1</span></a>' +
-      '</div>';
+      '<div class="fab-panel" id="fab-panel" hidden role="dialog" aria-labelledby="fab-title">' +
+        '<div class="fab-panel__head">' +
+          '<span class="fab-brand" aria-hidden="true">27<span>n</span></span>' +
+          '<button class="fab-x" type="button" data-fab-close>' + xIcon + '</button>' +
+        '</div>' +
+        '<div class="fab-panel__body">' +
+          '<div class="fab-card">' +
+            '<h2 id="fab-title"></h2>' +
+            '<p></p>' +
+          '</div>' +
+          '<a class="fab-go" target="_blank" rel="noopener"></a>' +
+          '<button class="fab-later" type="button" data-fab-close></button>' +
+        '</div>' +
+      '</div>' +
+      '<button class="fab-trigger" type="button" aria-expanded="false" aria-controls="fab-panel">' +
+        waIcon + xIcon +
+      '</button>';
     document.body.appendChild(el);
+
+    var panel = el.querySelector(".fab-panel");
+    var trigger = el.querySelector(".fab-trigger");
+    var title = el.querySelector("#fab-title");
+    var body = el.querySelector(".fab-card p");
+    var go = el.querySelector(".fab-go");
+    var later = el.querySelector(".fab-later");
+    var closers = el.querySelectorAll("[data-fab-close]");
+    title.textContent = copy.title;
+    body.textContent = copy.body;
+    go.textContent = copy.go;
+    go.href = waHref;
+    later.textContent = copy.later;
+    trigger.setAttribute("aria-label", copy.open);
+    el.querySelector(".fab-x").setAttribute("aria-label", copy.close);
+
+    function setOpen(open) {
+      el.classList.toggle("is-open", open);
+      trigger.setAttribute("aria-expanded", open ? "true" : "false");
+      trigger.setAttribute("aria-label", open ? copy.close : copy.open);
+      if (open) {
+        panel.hidden = false;
+        go.focus();
+      } else {
+        panel.hidden = true;
+        trigger.focus();
+      }
+    }
+
+    trigger.addEventListener("click", function () { setOpen(!el.classList.contains("is-open")); });
+    closers.forEach(function (btn) {
+      btn.addEventListener("click", function () { setOpen(false); });
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && el.classList.contains("is-open")) setOpen(false);
+    });
   })();
 })();
