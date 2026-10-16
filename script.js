@@ -85,11 +85,12 @@
     });
   }
 
+  var fold = function (s) {
+    return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  };
+
   var platformSearch = document.getElementById("platform-search");
   if (platformSearch) {
-    var fold = function (s) {
-      return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    };
     platformSearch.addEventListener("input", function () {
       var q = fold(platformSearch.value.trim());
       document.querySelectorAll(".platform-grid li").forEach(function (item) {
@@ -101,11 +102,11 @@
   var appSearch = document.getElementById("app-search");
   if (appSearch) {
     appSearch.addEventListener("input", function () {
-      var q = appSearch.value.trim().toLowerCase();
+      var q = fold(appSearch.value.trim());
       document.querySelectorAll(".app-group").forEach(function (group) {
         var visible = 0;
         group.querySelectorAll(".app").forEach(function (card) {
-          var show = !q || card.textContent.toLowerCase().indexOf(q) !== -1;
+          var show = !q || fold(card.textContent).indexOf(q) !== -1;
           card.hidden = !show;
           if (show) {
             visible += 1;
