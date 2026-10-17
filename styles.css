@@ -836,7 +836,7 @@ a.service { color: inherit; text-decoration: none; display: flex; flex-direction
 .team-pillar p {
   color: var(--ink-soft);
   font-size: 0.97rem;
-  max-width: 32ch;
+  max-width: 38ch;
   margin: 0 auto;
 }
 .team-grid {
@@ -881,9 +881,30 @@ a.service { color: inherit; text-decoration: none; display: flex; flex-direction
 .team-member__bio {
   color: var(--ink-soft);
   font-size: 0.92rem;
-  max-width: 34ch;
+  max-width: 38ch;
   margin: 0 auto;
   line-height: 1.5;
+}
+.team-member__services {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.team-member__services li {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  color: var(--blue);
+  background: var(--accent-wash);
+  border: 1px solid var(--accent-edge);
+  border-radius: 999px;
+  padding: 5px 10px;
 }
 
 /* ---------- Checklist ---------- */
