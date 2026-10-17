@@ -732,7 +732,12 @@ a.service { color: inherit; text-decoration: none; display: flex; flex-direction
 .contact-card .field select:focus {
   border-color: var(--blue); background-color: var(--card-hover);
 }
-.contact-card .btn--white { background: #fff; color: #141414; }
+.contact-card .btn--white {
+  background: var(--fill); color: #fff; box-shadow: none;
+}
+.contact-card .btn--white:hover {
+  background: var(--fill-to); color: #fff;
+}
 .contact-aside { display: grid; gap: 16px; }
 .contact-aside .contact-card p + p { margin-top: 10px; }
 
