@@ -384,7 +384,7 @@
       es: "Hola. Vengo de la web de 27n y me gustaría hablar de un proyecto."
     };
     var copy = waCopy[lang] || waCopy.pt;
-    var waHref = "https://wa.me/351911579030?text=" + encodeURIComponent(messages[lang] || messages.pt);
+    var waHref = "https://wa.me/351915188580?text=" + encodeURIComponent(messages[lang] || messages.pt);
     var waIcon = '<svg class="fab-icon-wa" viewBox="0 0 24 24" aria-hidden="true">' +
       '<path fill="currentColor" d="M12 2.2A9.8 9.8 0 0 0 3.5 16.7L2.2 21.8l5.2-1.3A9.8 9.8 0 1 0 12 2.2zm0 17.8c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.8-.3-1.6-.8-2.2-1.6-.5-.6-.9-1.3-1-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.1.1-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.1 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.5-.3z"/>' +
       '</svg>';
