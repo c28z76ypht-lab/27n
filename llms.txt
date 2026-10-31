@@ -1,0 +1,49 @@
+# 27n
+
+> 27n is a Shopify agency and software company in Portugal, with bases in Seia, Évora and Lisbon. Shopify Select Partner since 2021, with more than 250 websites and online stores built. The site is available in Portuguese, English, German, French and Spanish.
+
+Contact: ola@27n.pt · +351 911 579 030 · https://www.27n.pt/pt/contact/
+
+## Services
+
+- Shopify, Shopify Plus, Hydrogen, POS and Markets: B2C and B2B stores, headless, multi-store and international expansion
+- Migrations to Shopify from WooCommerce, Magento/Adobe Commerce, PrestaShop, Wix, VTEX, BigCommerce and others, with URL-by-URL 301 redirects
+- Open-source commerce with Medusa, and fast sites with Astro
+- Custom Shopify themes, public and private Shopify apps, checkout extensions
+- ERP and invoicing integrations (Moloni, Primavera, Sage, PHC, SAP, Business Central), certified invoicing (SAF-T, ATCUD), MB WAY and Multibanco
+- Unified commerce and physical retail (Shopify POS, OMS), catalogue/PIM/DAM
+- SEO, AEO and GEO, paid media (Google, Meta, TikTok), social media and influencer marketing, inbound marketing with HubSpot
+- CRO, analytics and server-side tracking, CRM and retention with Klaviyo
+- Product design, UX/UI, branding, product photography, 3D and AR
+- Web apps, mobile apps (including a native app for Shopify stores), front-end, back-end and QA
+- Cloud, managed cybersecurity (SOC, pentest), 24/7 monitoring and support, dedicated and nearshore teams
+- Customer service and helpdesk (Zendesk, Gorgias), AI applications and digital preservation
+
+## Key pages (Portuguese)
+
+- [Home](https://www.27n.pt/pt/)
+- [Shopify Partner Portugal](https://www.27n.pt/pt/shopify-partner-portugal/)
+- [Agência Shopify](https://www.27n.pt/pt/agencia-shopify/)
+- [Migração para Shopify](https://www.27n.pt/pt/migracao-shopify/)
+- [Shopify Plus](https://www.27n.pt/pt/shopify-plus/)
+- [Quanto custa uma loja Shopify](https://www.27n.pt/pt/quanto-custa-loja-shopify/)
+- [Integrações](https://www.27n.pt/pt/integracoes/)
+- [Trabalhos](https://www.27n.pt/pt/trabalhos/)
+- [Recursos](https://www.27n.pt/pt/recursos/)
+- [Perguntas frequentes](https://www.27n.pt/pt/perguntas-frequentes/)
+
+## Key pages (English)
+
+- [Home](https://www.27n.pt/en/)
+- [Shopify Partner Portugal](https://www.27n.pt/en/shopify-partner-portugal/)
+- [Shopify agency](https://www.27n.pt/shopify-agency/)
+- [Shopify migration](https://www.27n.pt/shopify-migration/)
+- [Shopify Plus](https://www.27n.pt/shopify-plus/)
+- [Work](https://www.27n.pt/en/work/)
+- [Resources](https://www.27n.pt/en/resources/)
+- [FAQ](https://www.27n.pt/en/faq/)
+
+## Other languages
+
+- [Deutsch](https://www.27n.pt/de/) · [Français](https://www.27n.pt/fr/) · [Español](https://www.27n.pt/es/)
+- Sitemap: https://www.27n.pt/sitemap.xml
