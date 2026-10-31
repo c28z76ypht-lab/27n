@@ -4,6 +4,11 @@
 (function () {
   "use strict";
 
+  var viewport = document.querySelector('meta[name="viewport"]');
+  if (viewport && viewport.content.indexOf("viewport-fit") === -1) {
+    viewport.setAttribute("content", viewport.content + ", viewport-fit=cover");
+  }
+
   /* ---- Theme (light / dark) ---- */
   (function () {
     var root = document.documentElement;
@@ -73,15 +78,31 @@
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.getElementById("mobile-menu");
   if (toggle && menu) {
+    var menuLang = (document.documentElement.lang || "pt").slice(0, 2);
+    var menuClose = {
+      en: "Close menu",
+      pt: "Fechar menu",
+      de: "Menü schließen",
+      fr: "Fermer le menu",
+      es: "Cerrar menú"
+    }[menuLang] || "Fechar menu";
     var setMenu = function (open) {
       toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? menuClose : (toggle.getAttribute("data-label-open") || "Abrir menu"));
       menu.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
     };
+    if (!toggle.getAttribute("data-label-open")) {
+      toggle.setAttribute("data-label-open", toggle.getAttribute("aria-label") || "Abrir menu");
+    }
     toggle.addEventListener("click", function () {
       setMenu(toggle.getAttribute("aria-expanded") !== "true");
     });
     menu.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () { setMenu(false); });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setMenu(false);
     });
   }
 
@@ -322,11 +343,22 @@
     try {
       if (localStorage.getItem(key)) return;
     } catch (e) { /* ignore */ }
+    var syncCookie = function () {
+      var open = !banner.hidden;
+      document.body.classList.toggle("has-cookie", open);
+      if (open) {
+        document.documentElement.style.setProperty("--cookie-h", banner.offsetHeight + "px");
+      }
+    };
     banner.hidden = false;
+    syncCookie();
+    window.addEventListener("resize", syncCookie, { passive: true });
+    if (window.ResizeObserver) new ResizeObserver(syncCookie).observe(banner);
     banner.querySelectorAll("[data-cookie]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         try { localStorage.setItem(key, btn.getAttribute("data-cookie")); } catch (e) { /* ignore */ }
         banner.hidden = true;
+        syncCookie();
       });
     });
   })();
