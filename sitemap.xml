@@ -2138,12 +2138,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.27n.pt/pages/meet/</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.27n.pt/pt/criar-loja-online-shopify/</loc>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/criar-loja-online-shopify/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/criar-loja-online-shopify/"/>
@@ -2406,5 +2400,125 @@
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/agendar/goncalo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/book/goncalo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/de/termin/goncalo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/fr/rendez-vous/goncalo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/es/cita/goncalo/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/goncalo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/goncalo/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/pt/agendar/alexandre/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/en/book/alexandre/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/de/termin/alexandre/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/fr/rendez-vous/alexandre/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.27n.pt/es/cita/alexandre/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.27n.pt/en/book/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.27n.pt/de/termin/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.27n.pt/fr/rendez-vous/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.27n.pt/es/cita/alexandre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.27n.pt/pt/agendar/alexandre/"/>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
