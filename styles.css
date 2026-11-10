@@ -550,6 +550,103 @@ a.service { color: inherit; text-decoration: none; display: flex; flex-direction
   box-shadow: 0 24px 60px -32px var(--shadow-accent);
   padding: clamp(40px, 8vw, 72px);
 }
+.booking-panel--split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: clamp(24px, 4vw, 36px);
+  align-items: stretch;
+}
+.booking-panel--links {
+  margin-top: 22px;
+  padding: 22px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.booking-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 22px 22px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.booking-choice:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+.booking-choice__who {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+.booking-choice__role {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.booking-person {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 18px 0 8px;
+}
+.booking-person h1 {
+  margin: 0;
+}
+.booking-person__role {
+  margin: 4px 0 0;
+  color: var(--on-accent-soft);
+  font-size: 1.05rem;
+}
+.booking-person__bio {
+  margin-top: 10px;
+  color: var(--on-accent-soft);
+  max-width: 36rem;
+}
+.booking-embed {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 24px 60px -32px var(--shadow-accent);
+}
+.booking-embed iframe {
+  display: block;
+  min-height: 720px;
+  background: #fff;
+}
+.booking-alt {
+  text-align: center;
+  margin-top: 8px;
+  color: var(--ink-soft);
+}
+.booking-alt a {
+  color: var(--blue);
+}
+.contact-book-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+@media (max-width: 720px) {
+  .booking-panel--split {
+    grid-template-columns: 1fr;
+  }
+  .booking-embed iframe {
+    min-height: 980px;
+    height: 980px;
+  }
+}
 
 /* ---------- CTA ---------- */
 .cta { position: relative; overflow: hidden; color: var(--on-accent); padding: clamp(70px, 10vw, 120px) 0;
